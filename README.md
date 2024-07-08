@@ -1,6 +1,6 @@
 # Plataforma de Visualización de Métricas para Scouting de Jugadores
 
-Este proyecto es parte de mi Trabajo de Fin de Máster (TFM) y consiste en una plataforma que permite visualizar y analizar métricas de rendimiento de jugadores para actividades de scouting.
+Este proyecto es parte de un Trabajo de Fin de Máster (TFM) y consiste en una plataforma que permite visualizar y analizar métricas de rendimiento de jugadores para actividades de scouting.
 
 ## Características
 

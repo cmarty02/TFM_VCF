@@ -7,6 +7,7 @@ import json
 import base64
 from datetime import datetime
 import logging
+import hashlib
 
 app = Flask(__name__)
 
@@ -65,8 +66,26 @@ def index():
             # Mostrar los primeros registros del DataFrame para verificar
             logging.info(f"Primeros registros del DataFrame: {df.head()}")
 
+            # Generar hash del contenido del archivo
+            file_hash = hashlib.md5(content.encode('utf-8')).hexdigest()
+            logging.info(f"Hash del archivo: {file_hash}")
+
+            # Verificar si el hash ya existe en BigQuery
+            query = f"""
+            SELECT file_hash
+            FROM `{PROJECT_ID}.{BQ_DATASET}.{BQ_TABLE}`
+            WHERE file_hash = '{file_hash}'
+            """
+            query_job = bq_client.query(query)
+            results = query_job.result()
+
+            if results.total_rows > 0:
+                logging.info(f"El archivo {file_name} ya fue procesado anteriormente.")
+                return 'Archivo ya procesado', 200
+
             # Agregar una columna de ID de subida con la fecha y hora actual
             df['upload_id'] = datetime.now().isoformat()
+            df['file_hash'] = file_hash
 
             # Definir la referencia a la tabla de BigQuery
             table_id = f"{PROJECT_ID}.{BQ_DATASET}.{BQ_TABLE}"

@@ -21,7 +21,28 @@ def upload_to_gcs(bucket_name, destination_blob_name, file):
     st.success(f'File uploaded to {bucket_name}/{destination_blob_name}')
 
 # Interfaz de Streamlit
-st.title('Upload CSV to Google Cloud Storage')
+st.markdown(
+    """
+    <style>
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        margin-bottom: -10px; /* Ajustar según sea necesario */
+    }
+    .center img {
+        width: 100px; /* Ajustar el ancho según sea necesario */
+    }
+    </style>
+    <div class="center">
+        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/ce/Valenciacf.svg/176px-Valenciacf.svg.png" alt="Valencia CF Logo">
+    </div>
+    """,
+    unsafe_allow_html=True
+)
+
+st.title('VCF Forecasting Scouting Model')
 
 uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
 

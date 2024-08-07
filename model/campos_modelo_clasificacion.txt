@@ -1,0 +1,25 @@
+Data columns (total 22 columns):
+ #   Column               Non-Null Count  Dtype   
+---  ------               --------------  -----   
+ 0   Jugador              2288 non-null   object  
+ 1   Posición             2288 non-null   object  
+ 2   Edad                 2288 non-null   int64   
+ 3   Nacionalidad         2288 non-null   object  
+ 4   Temporada            2288 non-null   object  
+ 5   Fecha                2288 non-null   int64   
+ 6   Coste                2288 non-null   float64 
+ 7   VM_TM                2288 non-null   float64 
+ 8   Equipo origen        2288 non-null   object  
+ 9   Elo (EO)             2288 non-null   float64 
+ 10  Equipo destino       2288 non-null   object  
+ 11  Elo (ED)             2288 non-null   int64   
+ 12  Competición origen   2288 non-null   object  
+ 13  Elo (CO)             2288 non-null   float64 
+ 14  Competición destino  2288 non-null   object  
+ 15  Elo (CD)             2288 non-null   int64   
+ 16  Partidos             2288 non-null   float64 
+ 17  Goles                2288 non-null   float64 
+ 18  Asistencias          2288 non-null   float64 
+ 19  Goles Concedidos     2288 non-null   float64 
+ 20  RDT                  2288 non-null   float64 
+ 21  Clasificacion        2288 non-null   category

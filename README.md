@@ -16,7 +16,11 @@ Este proyecto es parte de un Trabajo de Fin de Máster (TFM) y consiste en una p
 - Cristian Marty
   
 
-#Deploy_CloudRun - comandos sdk
+# Link a Data Studio
+https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af
+
+
+# Deploy_CloudRun - comandos sdk
 
 -creacion de subscripcion del bucket para con el canal de pubsub:
 

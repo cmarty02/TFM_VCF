@@ -3,7 +3,6 @@ import streamlit as st
 from google.cloud import storage
 from google.oauth2 import service_account
 import pandas as pd
-import io
 from sklearn.preprocessing import MinMaxScaler
 import unidecode
 

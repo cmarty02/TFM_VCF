@@ -1,0 +1,526 @@
+,Jugador,Posición,Edad,Nacionalidad,Temporada,Fecha,Coste,VM (TM),C/VM,Equipo origen,Elo (EO),Equipo destino,Elo (ED),Competición origen,Elo (CO),Competición destino,Elo (CD),Partidos,Goles,Asistencias,Goles Concedidos,RDT
+0,Declan Rice,Mediocentro Defensivo,24,Inglaterra,2023/2024,2023-07-15,116.6,90.0,1.296,West Ham,92,Arsenal,97,Premier League,100,Premier League,100,50,5,3,-,8.34
+1,Moisés Caicedo,Mediocentro Defensivo,21,Ecuador,2023/2024,2023-08-14,116.0,75.0,1.547,Brighton & Hove Albion,92,Chelsea,94,Premier League,100,Premier League,100,43,1,1,-,8.49
+2,J. Bellingham,Mediapunta,20,Inglaterra,2023/2024,2023-07-01,103.0,120.0,0.858,B. Dortmund,95,Real Madrid,99,Bundesliga,98,Primera División,98,42,14,6,-,8.7
+3,Harry Kane,Delantero Centro,30,Inglaterra,2023/2024,2023-08-12,95.0,90.0,1.056,Tottenham Hotspur,94,Bayern München,99,Premier League,100,Bundesliga,98,49,32,5,-,8.91
+4,Kolo Muani,Delantero Centro,24,Francia,2023/2024,2023-09-01,95.0,80.0,1.188,Eintracht Frankfurt,89,PSG,91,Bundesliga,98,Ligue 1,92,46,23,14,-,8.83
+5,Joško Gvardiol,Lateral Izquierdo,21,Croacia,2023/2024,2023-08-05,90.0,75.0,1.2,RB Leipzig,96,Manchester City,100,Bundesliga,98,Premier League,100,41,3,0,-,8.39
+6,Kai Havertz,Mediapunta,24,Alemania,2023/2024,2023-07-01,75.0,55.0,1.364,Chelsea,94,Arsenal,97,Premier League,100,Premier League,100,47,9,1,-,8.14
+7,R. Højlund,Delantero Centro,20,Dinamarca,2023/2024,2023-08-05,73.9,45.0,1.642,Atalanta,93,Manchester United,95,Serie A,97,Premier League,100,34,10,2,-,7.59
+8,D. Szoboszlai,Mediocentro,22,Hungría,2023/2024,2023-07-02,70.0,50.0,1.4,RB Leipzig,96,Liverpool,99,Bundesliga,98,Premier League,100,46,10,12,-,8.68
+9,Gonçalo Ramos,Delantero Centro,22,Portugal,2023/2024,2024-01-01,65.0,50.0,1.3,Benfica,88,PSG,91,Liga Portuguesa,86,Ligue 1,92,-,-,-,-,-
+10,Mason Mount,Mediapunta,24,Inglaterra,2023/2024,2023-07-05,64.2,60.0,1.07,Chelsea,94,Manchester United,95,Premier League,100,Premier League,100,35,3,5,-,7.45
+11,Sandro Tonali,Mediocentro Defensivo,23,Italia,2023/2024,2023-07-03,64.0,50.0,1.28,Milan,93,Newcastle,93,Serie A,97,Premier League,100,48,2,9,-,8.29
+12,Roméo Lavia,Mediocentro Defensivo,19,Bélgica,2023/2024,2023-08-18,62.1,32.0,1.941,Southampton,86,Chelsea,94,Championship,87,Premier League,100,34,1,1,-,7.48
+13,Matheus Nunes,Mediocentro,25,Portugal,2023/2024,2023-09-01,62.0,45.0,1.378,Wolves,90,Manchester City,100,Premier League,100,Premier League,100,39,1,1,-,7.64
+14,Jérémy Doku,Extremo Izquierdo,21,Bélgica,2023/2024,2023-08-24,60.0,28.0,2.143,Stade Rennais,88,Manchester City,100,Ligue 1,92,Premier League,100,35,7,4,-,7.49
+15,C. Nkunku,Mediapunta,25,Francia,2023/2024,2023-07-01,60.0,80.0,0.75,RB Leipzig,96,Chelsea,94,Bundesliga,98,Premier League,100,36,23,6,-,8.35
+16,M. Ugarte,Mediocentro Defensivo,22,Uruguay,2023/2024,2023-07-07,60.0,50.0,1.2,Sporting CP,88,PSG,91,Liga Portuguesa,86,Ligue 1,92,47,0,1,-,8.14
+17,B. Johnson,Extremo Derecho,22,Gales,2023/2024,2023-09-01,55.0,38.0,1.447,Nottingham Forest,86,Tottenham Hotspur,94,Premier League,100,Premier League,100,44,10,3,-,8.34
+18,M. Diaby,Extremo Derecho,24,Francia,2023/2024,2023-07-22,55.0,50.0,1.1,B. Leverkusen,95,Aston Villa,92,Bundesliga,98,Premier League,100,48,14,10,-,8.53
+19,André Onana,Portero,27,Camerún,2023/2024,2023-07-20,50.2,35.0,1.434,Inter,98,Manchester United,95,Serie A,97,Premier League,100,41,-,-,36,8.5
+20,O. Dembélé,Extremo Derecho,26,Francia,2023/2024,2023-08-12,50.0,60.0,0.833,Barcelona,96,PSG,91,Primera División,98,Ligue 1,92,35,8,8,-,7.84
+21,Matheus Cunha,Delantero Centro,24,Brasil,2023/2024,2023-07-01,50.0,25.0,2.0,Atlético,94,Wolves,90,Primera División,98,Premier League,100,17,0,2,-,5.91
+22,Min-Jae Kim,Central,26,Corea del Sur,2023/2024,2023-07-18,50.0,60.0,0.833,Napoli,93,Bayern München,99,Serie A,97,Bundesliga,98,45,2,2,-,8.68
+23,Cole Palmer,Mediapunta,21,Inglaterra,2023/2024,2023-09-01,47.0,18.0,2.611,Manchester City,100,Chelsea,94,Premier League,100,Premier League,100,25,1,1,-,6.57
+24,J. Maddison,Mediapunta,26,Inglaterra,2023/2024,2023-07-01,46.3,60.0,0.772,Leicester,89,Tottenham Hotspur,94,Championship,87,Premier League,100,32,10,9,-,7.95
+25,Lucas Hernández,Lateral Izquierdo,27,Francia,2023/2024,2023-07-09,45.0,45.0,1.0,Bayern München,99,PSG,91,Bundesliga,98,Ligue 1,92,11,1,1,-,7.27
+26,Axel Disasi,Central,25,Francia,2023/2024,2023-08-04,45.0,30.0,1.5,Monaco,88,Chelsea,94,Ligue 1,92,Premier League,100,49,6,4,-,8.52
+27,B. Barcola,Extremo Izquierdo,20,Francia,2023/2024,2023-08-31,45.0,18.0,2.5,Olympique Lyonnais,86,PSG,91,Ligue 1,92,Ligue 1,92,31,7,9,-,7.7
+28,Harvey Barnes,Extremo Izquierdo,25,Inglaterra,2023/2024,2023-07-23,44.0,35.0,1.257,Leicester,89,Newcastle,93,Championship,87,Premier League,100,40,13,3,-,8.45
+29,M. Kudus,Mediapunta,23,Ghana,2023/2024,2023-08-27,43.0,40.0,1.075,Ajax,88,West Ham,92,Eredivisie,90,Premier League,100,42,18,6,-,8.42
+30,A. Mac Allister,Mediocentro,24,Argentina,2023/2024,2023-07-01,42.0,65.0,0.646,Brighton & Hove Albion,92,Liverpool,99,Premier League,100,Premier League,100,40,12,3,-,8.77
+31,Vitor Roque,Delantero Centro,18,Brasil,2023/2024,2024-01-01,40.0,40.0,1.0,Athletico Paranaense,89,Barcelona,96,Liga Brasileña,97,Primera División,98,-,-,-,-,-
+32,Jurriën Timber,Central,22,Países Bajos,2023/2024,2023-07-14,40.0,42.0,0.952,Ajax,88,Arsenal,97,Eredivisie,90,Premier League,100,47,2,2,-,8.53
+33,Pedro Porro,Lateral Derecho,23,España,2023/2024,2023-07-01,40.0,40.0,1.0,Sporting CP,88,Tottenham Hotspur,94,Liga Portuguesa,86,Premier League,100,26,4,9,-,7.62
+34,R. Gravenberch,Mediocentro,21,Países Bajos,2023/2024,2023-09-01,40.0,30.0,1.333,Bayern München,99,Liverpool,99,Bundesliga,98,Premier League,100,33,1,1,-,7.02
+35,M. Van De Ven,Central,22,Países Bajos,2023/2024,2023-08-08,40.0,30.0,1.333,Wolfsburg,87,Tottenham Hotspur,94,Bundesliga,98,Premier League,100,36,1,1,-,8.01
+36,Loïs Openda,Delantero Centro,23,Bélgica,2023/2024,2023-07-14,40.0,35.0,1.143,Lens,87,RB Leipzig,96,Ligue 1,92,Bundesliga,98,42,21,4,-,8.68
+37,Edson Álvarez,Mediocentro Defensivo,25,México,2023/2024,2023-08-10,38.0,35.0,1.086,Ajax,88,West Ham,92,Eredivisie,90,Premier League,100,44,4,3,-,8.47
+38,T. Livramento,Lateral Derecho,20,Inglaterra,2023/2024,2023-08-08,37.2,25.0,1.488,Southampton,86,Newcastle,93,Championship,87,Premier League,100,2,0,0,-,4.61
+39,N. Jackson,Delantero Centro,22,Senegal,2023/2024,2023-07-01,37.0,30.0,1.233,Villarreal,90,Chelsea,94,Primera División,98,Premier League,100,38,13,5,-,7.68
+40,M. Locatelli,Mediocentro Defensivo,25,Italia,2023/2024,2023-07-01,36.4,30.0,1.213,Sassuolo,84,Juventus,95,Serie A,97,Serie A,97,-,-,-,-,-
+41,I. Sangaré,Mediocentro Defensivo,25,Costa de Marfil,2023/2024,2023-09-01,35.0,35.0,1.0,PSV,88,Nottingham Forest,86,Eredivisie,90,Premier League,100,45,8,3,-,8.47
+42,J. Ward-Prowse,Mediocentro,28,Inglaterra,2023/2024,2023-08-14,34.8,38.0,0.916,Southampton,86,West Ham,92,Championship,87,Premier League,100,45,11,5,-,8.48
+43,João Pedro,Delantero Centro,21,Brasil,2023/2024,2023-07-01,34.2,32.0,1.069,Watford,77,Brighton & Hove Albion,92,Championship,87,Premier League,100,35,11,4,-,8.11
+44,Pau Torres,Central,26,España,2023/2024,2023-07-12,33.0,45.0,0.733,Villarreal,90,Aston Villa,92,Primera División,98,Premier League,100,39,1,0,-,7.84
+45,Elye Wahi,Delantero Centro,20,Francia,2023/2024,2023-08-20,30.0,35.0,0.857,Montpellier,80,Lens,87,Ligue 1,92,Ligue 1,92,33,19,5,-,8.1
+46,F. Balogun,Delantero Centro,22,Estados Unidos,2023/2024,2023-08-30,30.0,30.0,1.0,Arsenal,97,Monaco,88,Premier League,100,Ligue 1,92,-,-,-,-,-
+47,B. Pavard,Central,27,Francia,2023/2024,2023-08-30,30.0,40.0,0.75,Bayern München,99,Inter,98,Bundesliga,98,Serie A,97,43,7,0,-,8.49
+48,Moise Kean,Delantero Centro,23,Italia,2023/2024,2023-07-01,30.0,18.0,1.667,Everton,89,Juventus,95,Premier League,100,Serie A,97,-,-,-,-,-
+49,Felix Nmecha,Mediocentro,22,Alemania,2023/2024,2023-07-03,30.0,15.0,2.0,Wolfsburg,87,B. Dortmund,95,Bundesliga,98,Bundesliga,98,32,3,4,-,7.6
+50,D. Kulusevski,Extremo Derecho,23,Suecia,2023/2024,2023-07-01,30.0,50.0,0.6,Juventus,95,Tottenham Hotspur,94,Serie A,97,Premier League,100,-,-,-,-,-
+51,Sacha Boey,Lateral Derecho,23,Francia,2023/2024,2024-01-28,30.0,22.0,1.364,Galatasaray SK,86,Bayern München,99,Liga Turca,91,Bundesliga,98,31,2,0,-,8.23
+52,C. Lukeba,Central,20,Francia,2023/2024,2023-08-11,30.0,25.0,1.2,Olympique Lyonnais,86,RB Leipzig,96,Ligue 1,92,Bundesliga,98,38,2,0,-,7.76
+53,J. Lindstrøm,Mediapunta,23,Dinamarca,2023/2024,2023-08-29,30.0,28.0,1.071,Eintracht Frankfurt,89,Napoli,93,Bundesliga,98,Serie A,97,38,9,2,-,7.77
+54,Mateo Kovačić,Mediocentro,29,Croacia,2023/2024,2023-07-01,29.1,38.0,0.766,Chelsea,94,Manchester City,100,Premier League,100,Premier League,100,37,2,2,-,7.36
+55,E. Touré,Delantero Centro,21,Mali,2023/2024,2023-07-29,29.1,12.0,2.425,Almería,79,Atalanta,93,Primera División,98,Serie A,97,22,7,2,-,7.26
+56,Hugo Ekitiké,Delantero Centro,21,Francia,2023/2024,2023-07-01,28.5,20.0,1.425,Stade de Reims,81,PSG,91,Ligue 1,92,Ligue 1,92,-,-,-,-,-
+57,Robin Gosens,Carrilero Izquierdo,28,Alemania,2022/2023,2022-07-01,27.4,28.0,0.979,Atalanta,93,Inter,98,Serie A,97,Serie A,97,8,2,0,-,6.01
+58,Carlos Baleba,Mediocentro Defensivo,19,Camerún,2023/2024,2023-08-29,27.0,5.0,5.4,Lille,89,Brighton & Hove Albion,92,Ligue 1,92,Premier League,100,21,0,0,-,6.53
+59,L. Ugochukwu,Mediocentro Defensivo,19,Francia,2023/2024,2023-08-01,27.0,9.0,3.0,Stade Rennais,88,Chelsea,94,Ligue 1,92,Premier League,100,35,0,1,-,7.33
+60,G. Raspadori,Mediapunta,23,Italia,2023/2024,2023-07-01,27.0,35.0,0.771,Sassuolo,84,Napoli,93,Serie A,97,Serie A,97,2,0,0,-,4.97
+61,T. Adams,Mediocentro Defensivo,24,Estados Unidos,2023/2024,2023-08-20,26.9,18.0,1.494,Leeds United,86,AFC Bournemouth,88,Championship,87,Premier League,100,26,0,0,-,7.24
+62,Nathan Collins,Central,22,Irlanda,2023/2024,2023-07-04,26.85,22.0,1.22,Wolves,90,Brentford,90,Premier League,100,Premier League,100,31,0,0,-,7.59
+63,Hamed Traorè,Mediapunta,23,Costa de Marfil,2023/2024,2023-07-01,25.62,22.0,1.165,Sassuolo,84,AFC Bournemouth,88,Serie A,97,Premier League,100,11,0,3,-,6.24
+64,G. Scamacca,Delantero Centro,24,Italia,2023/2024,2023-08-07,25.6,22.0,1.164,West Ham,92,Atalanta,93,Premier League,100,Serie A,97,27,8,0,-,7.06
+65,C. Baumgartner,Mediapunta,23,Austria,2023/2024,2023-07-01,25.5,24.0,1.063,Hoffenheim,86,RB Leipzig,96,Bundesliga,98,Bundesliga,98,36,7,3,-,7.84
+66,R. Drăgușin,Central,21,Rumanía,2023/2024,2024-01-11,25.0,20.0,1.25,Genoa,84,Tottenham Hotspur,94,Serie A,97,Premier League,100,22,2,1,-,7.61
+67,Beto,Delantero Centro,25,Portugal,2023/2024,2023-08-29,25.0,25.0,1.0,Udinese,85,Everton,89,Serie A,97,Premier League,100,34,10,2,-,7.76
+68,Lovro Majer,Mediapunta,25,Croacia,2023/2024,2023-08-16,25.0,20.0,1.25,Stade Rennais,88,Wolfsburg,87,Ligue 1,92,Bundesliga,98,42,3,6,-,8.09
+69,Kevin Schade,Extremo Derecho,21,Alemania,2023/2024,2023-07-01,25.0,25.0,1.0,SC Freiburg,89,Brentford,90,Bundesliga,98,Premier League,100,12,1,0,-,5.95
+70,R. Calafiori,Central,21,Italia,2023/2024,2023-08-31,24.5,4.5,5.444,Basel,83,Bologna,88,Liga Suiza,89,Serie A,97,34,1,2,-,7.64
+71,Eljif Elmas,Mediapunta,24,Macedonia del Norte,2023/2024,2024-01-01,24.0,24.0,1.0,Napoli,93,RB Leipzig,96,Serie A,97,Bundesliga,98,16,2,0,-,6.04
+72,B. Šeško,Delantero Centro,20,Eslovenia,2023/2024,2023-07-01,24.0,24.0,1.0,Salzburg,80,RB Leipzig,96,Bundesliga Austria,89,Bundesliga,98,41,18,4,-,8.58
+73,Nathan Tella,Extremo Derecho,24,Nigeria,2023/2024,2023-08-27,23.3,18.0,1.294,Southampton,86,B. Leverkusen,95,Championship,87,Bundesliga,98,-,-,-,-,-
+74,Alex Scott,Mediocentro,19,Inglaterra,2023/2024,2023-08-10,23.0,20.0,1.15,Bristol City,77,AFC Bournemouth,88,Championship,87,Premier League,100,49,2,5,-,8.23
+75,Robert Sánchez,Portero,25,España,2023/2024,2023-08-05,23.0,22.0,1.045,Brighton & Hove Albion,92,Chelsea,94,Premier League,100,Premier League,100,25,-,-,30,7.67
+76,C. Bassey,Central,23,Nigeria,2023/2024,2023-07-28,22.5,15.0,1.5,Ajax,88,Fulham,89,Eredivisie,90,Premier League,100,39,1,4,-,7.7
+77,Terem Moffi,Delantero Centro,24,Nigeria,2023/2024,2023-07-01,22.5,20.0,1.125,Lorient,76,Nice,86,Ligue 1,92,Ligue 1,92,18,12,0,-,7.52
+78,Kang-In Lee,Mediapunta,22,Corea del Sur,2023/2024,2023-07-08,22.0,22.0,1.0,Mallorca,85,PSG,91,Primera División,98,Ligue 1,92,39,6,8,-,8.04
+79,A. Griezmann,Delantero Centro,32,Francia,2023/2024,2023-07-01,22.0,25.0,0.88,Barcelona,96,Atlético,94,Primera División,98,Primera División,98,-,-,-,-,-
+80,V. Boniface,Delantero Centro,22,Nigeria,2023/2024,2023-07-22,21.7,12.0,1.808,Union Saint-Gilloise,87,B. Leverkusen,95,Liga Belga,91,Bundesliga,98,51,17,10,-,8.62
+81,Cameron Archer,Delantero Centro,21,Inglaterra,2023/2024,2023-08-27,21.55,12.0,1.796,Aston Villa,92,Sheffield United,83,Premier League,100,Premier League,100,7,0,0,-,4.58
+82,Adam Wharton,Mediocentro Defensivo,19,Inglaterra,2023/2024,2024-02-01,21.1,10.0,2.11,Blackburn Rovers,77,Crystal Palace,88,Championship,87,Premier League,100,29,2,3,-,7.04
+83,Renan Lodi,Lateral Izquierdo,25,Brasil,2023/2024,2023-07-14,20.6,20.0,1.03,Atlético,94,Olympique Marseille,88,Primera División,98,Ligue 1,92,-,-,-,-,-
+84,Matheus França,Mediapunta,19,Brasil,2023/2024,2023-08-05,20.0,9.0,2.222,Flamengo,89,Crystal Palace,88,Liga Brasileña,97,Premier League,100,28,3,0,-,6.69
+85,N. Seiwald,Mediocentro,22,Austria,2023/2024,2023-07-01,20.0,20.0,1.0,Salzburg,80,RB Leipzig,96,Bundesliga Austria,89,Bundesliga,98,43,4,3,-,8.69
+86,Arda Güler,Extremo Derecho,18,Turquía,2023/2024,2023-07-06,20.0,15.0,1.333,Fenerbahçe,85,Real Madrid,99,Liga Turca,91,Primera División,98,35,6,6,-,7.52
+87,Abakar Sylla,Central,20,Costa de Marfil,2023/2024,2023-07-15,20.0,8.0,2.5,Club Brugge,87,Strasbourg,81,Liga Belga,91,Ligue 1,92,27,1,1,-,7.16
+88,D. Zakaria,Mediocentro Defensivo,26,Suiza,2023/2024,2023-08-14,20.0,18.0,1.111,Juventus,95,Monaco,88,Serie A,97,Ligue 1,92,2,0,0,-,5.64
+89,Enzo Le Fée,Mediocentro,23,Francia,2023/2024,2023-07-07,20.0,20.0,1.0,Lorient,76,Stade Rennais,88,Ligue 1,92,Ligue 1,92,36,6,6,-,8.2
+90,Wataru Endo,Mediocentro Defensivo,30,Japón,2023/2024,2023-08-18,20.0,6.5,3.077,Stuttgart,90,Liverpool,99,Bundesliga,98,Premier League,100,40,6,4,-,8.69
+91,Lucas Beraldo,Central,20,Brasil,2023/2024,2024-01-01,20.0,15.0,1.333,São Paulo,89,PSG,91,Liga Brasileña,97,Ligue 1,92,-,-,-,-,-
+92,A. Pinamonti,Delantero Centro,24,Italia,2023/2024,2023-07-01,20.0,15.0,1.333,Inter,98,Sassuolo,84,Serie A,97,Serie A,97,-,-,-,-,-
+93,B. Verbruggen,Portero,20,Países Bajos,2023/2024,2023-07-03,20.0,10.0,2.0,Anderlecht,87,Brighton & Hove Albion,92,Liga Belga,91,Premier League,100,24,-,-,28,7.53
+94,C. Pulišić,Extremo Derecho,24,Estados Unidos,2023/2024,2023-07-13,20.0,25.0,0.8,Chelsea,94,Milan,93,Premier League,100,Serie A,97,30,1,2,-,6.97
+95,K. Mavropanos,Central,25,Grecia,2023/2024,2023-08-22,20.0,15.0,1.333,Stuttgart,90,West Ham,92,Bundesliga,98,Premier League,100,34,3,1,-,7.94
+96,Gabriel Moscardo,Mediocentro Defensivo,18,Brasil,2023/2024,2024-01-25,20.0,15.0,1.333,Corinthians,89,PSG,91,Liga Brasileña,97,Ligue 1,92,2,0,0,-,5.15
+97,Yunus Musah,Mediocentro,20,Estados Unidos,2023/2024,2023-08-04,20.0,18.0,1.111,Valencia,87,Milan,93,Primera División,98,Serie A,97,37,0,2,-,7.38
+98,S. Chukwueze,Extremo Derecho,24,Nigeria,2023/2024,2023-07-27,20.0,25.0,0.8,Villarreal,90,Milan,93,Primera División,98,Serie A,97,50,13,11,-,8.35
+99,Malick Fofana,Extremo Izquierdo,18,Bélgica,2023/2024,2024-01-10,19.5,8.0,2.438,KAA Gent,87,Olympique Lyonnais,86,Liga Belga,91,Ligue 1,92,31,4,5,-,7.91
+100,T. Reijnders,Mediocentro,24,Países Bajos,2023/2024,2023-07-19,19.0,14.0,1.357,AZ Alkmaar,88,Milan,93,Eredivisie,90,Serie A,97,54,8,10,-,8.62
+101,Marcel Sabitzer,Mediocentro,29,Austria,2023/2024,2023-07-24,19.0,20.0,0.95,Bayern München,99,B. Dortmund,95,Bundesliga,98,Bundesliga,98,24,1,1,-,6.74
+102,Zeki Amdouni,Delantero Centro,22,Suiza,2023/2024,2023-07-19,18.6,10.0,1.86,Basel,83,Burnley,86,Liga Suiza,89,Premier League,100,52,22,4,-,8.49
+103,G. Vicario,Portero,26,Italia,2023/2024,2023-07-01,18.5,16.0,1.156,Empoli,82,Tottenham Hotspur,94,Serie A,97,Premier League,100,32,-,-,41,7.98
+104,C. Echeverri,Mediapunta,18,Argentina,2023/2024,2024-01-25,18.5,12.0,1.542,River Plate,88,Manchester City,100,Liga Profesional Argentina,94,Premier League,100,23,3,4,-,7.19
+105,R. Loftus-Cheek,Mediocentro,27,Inglaterra,2023/2024,2023-07-01,18.5,25.0,0.74,Chelsea,94,Milan,93,Premier League,100,Serie A,97,33,0,2,-,7.31
+106,A. Vermeeren,Mediocentro,18,Bélgica,2023/2024,2024-01-26,18.0,30.0,0.6,Antwerp,87,Atlético,94,Liga Belga,91,Primera División,98,32,2,6,-,8.07
+107,Cyril Ngonge,Extremo Derecho,23,Bélgica,2023/2024,2024-01-19,18.0,6.0,3.0,Hellas Verona,81,Napoli,93,Serie A,97,Serie A,97,21,6,2,-,7.37
+108,Miloš Kerkez,Lateral Izquierdo,19,Hungría,2023/2024,2023-07-20,17.87,15.0,1.191,AZ Alkmaar,88,AFC Bournemouth,88,Eredivisie,90,Premier League,100,52,5,7,-,8.65
+109,A. Elanga,Extremo Derecho,21,Suecia,2023/2024,2023-07-25,17.5,18.0,0.972,Manchester United,95,Nottingham Forest,86,Premier League,100,Premier League,100,26,0,2,-,6.48
+110,Dean Henderson,Portero,26,Inglaterra,2023/2024,2023-08-31,17.5,18.0,0.972,Manchester United,95,Crystal Palace,88,Premier League,100,Premier League,100,-,-,-,-,-
+111,Gustavo Hamer,Mediocentro,26,Países Bajos,2023/2024,2023-08-12,17.3,8.0,2.163,Coventry City,81,Sheffield United,83,Championship,87,Premier League,100,42,9,10,-,8.78
+112,Jérémie Boga,Extremo Izquierdo,26,Costa de Marfil,2023/2024,2023-07-25,17.0,14.0,1.214,Atalanta,93,Nice,86,Serie A,97,Ligue 1,92,25,2,5,-,6.6
+113,I. Ndiaye,Delantero Centro,23,Senegal,2023/2024,2023-08-01,17.0,18.0,0.944,Sheffield United,83,Olympique Marseille,88,Premier League,100,Ligue 1,92,52,15,12,-,8.67
+114,Chris Wood,Delantero Centro,31,Nueva Zelanda,2023/2024,2023-07-01,17.0,8.0,2.125,Newcastle,93,Nottingham Forest,86,Premier League,100,Premier League,100,22,3,0,-,6.66
+115,N. Füllkrug,Delantero Centro,30,Alemania,2023/2024,2023-08-31,17.0,13.0,1.308,Werder Bremen,83,B. Dortmund,95,Bundesliga,98,Bundesliga,98,30,16,6,-,8.47
+116,Ivan Ilić,Mediocentro,22,Serbia,2023/2024,2023-07-01,16.5,19.0,0.868,Hellas Verona,81,Torino,87,Serie A,97,Serie A,97,12,0,1,-,6.61
+117,D. Washington,Delantero Centro,18,Brasil,2023/2024,2023-08-24,16.0,4.0,4.0,Santos FC,86,Chelsea,94,Liga Brasileña,97,Premier League,100,16,2,0,-,6.39
+118,D. Petrović,Portero,23,Serbia,2023/2024,2023-08-26,16.0,6.0,2.667,New England Revolution,83,Chelsea,94,MLS - Liga USA,92,Premier League,100,25,-,-,29,7.63
+119,A. Matusiwa,Mediocentro Defensivo,25,Países Bajos,2023/2024,2024-01-22,15.5,10.0,1.55,Stade de Reims,81,Stade Rennais,88,Ligue 1,92,Ligue 1,92,17,1,1,-,7.01
+120,E. Bitshiabu,Central,18,Francia,2023/2024,2023-07-18,15.0,7.0,2.143,PSG,91,RB Leipzig,96,Ligue 1,92,Bundesliga,98,16,0,0,-,6.07
+121,Romain Faivre,Interior Derecho,24,Francia,2023/2024,2023-07-13,15.0,10.0,1.5,Olympique Lyonnais,86,AFC Bournemouth,88,Ligue 1,92,Premier League,100,10,0,1,-,6.01
+122,Fabian Rieder,Mediapunta,21,Suiza,2023/2024,2023-08-31,15.0,15.0,1.0,Young Boys,84,Stade Rennais,88,Liga Suiza,89,Ligue 1,92,43,9,8,-,8.69
+123,Ludovic Blas,Extremo Derecho,25,Francia,2023/2024,2023-07-05,15.0,20.0,0.75,Nantes,76,Stade Rennais,88,Ligue 1,92,Ligue 1,92,51,12,8,-,8.32
+124,J. Bellegarde,Mediocentro,25,Francia,2023/2024,2023-09-01,15.0,10.0,1.5,Strasbourg,81,Wolves,90,Ligue 1,92,Premier League,100,31,2,6,-,7.72
+125,Granit Xhaka,Mediocentro Defensivo,30,Suiza,2023/2024,2023-07-06,15.0,20.0,0.75,Arsenal,97,B. Leverkusen,95,Premier League,100,Bundesliga,98,47,9,7,-,8.63
+126,Ângelo,Extremo Derecho,18,Brasil,2023/2024,2023-07-16,15.0,13.0,1.154,Santos FC,86,Chelsea,94,Liga Brasileña,97,Premier League,100,32,2,1,-,7.2
+127,Taty Castellanos,Delantero Centro,24,Argentina,2023/2024,2023-07-21,15.0,15.0,1.0,New York City,84,Lazio,91,MLS - Liga USA,92,Serie A,97,-,-,-,-,-
+128,Alejo Véliz,Delantero Centro,19,Argentina,2023/2024,2023-08-08,15.0,7.0,2.143,Rosario Central,85,Tottenham Hotspur,94,Copa Liga Profesional Argentina,94,Premier League,100,24,11,0,-,7.73
+129,M. Salisu,Central,24,Ghana,2023/2024,2023-08-01,15.0,18.0,0.833,Southampton,86,Monaco,88,Championship,87,Ligue 1,92,28,0,1,-,7.1
+130,H. Haraldsson,Extremo Izquierdo,20,Islandia,2023/2024,2023-07-17,15.0,6.0,2.5,Kobenhavn,84,Lille,89,Superliga Danesa,87,Ligue 1,92,43,5,5,-,8.13
+131,Jordan Beyer,Central,23,Alemania,2023/2024,2023-07-01,15.0,16.0,0.938,B. Mönchengladbach,88,Burnley,86,Bundesliga,98,Premier League,100,-,-,-,-,-
+132,Mateo Retegui,Delantero Centro,24,Italia,2023/2024,2023-07-26,14.5,16.0,0.906,Tigre,81,Genoa,84,Liga Profesional Argentina,94,Serie A,97,28,12,1,-,7.61
+133,Boulaye Dia,Delantero Centro,26,Senegal,2023/2024,2023-07-01,14.4,25.0,0.576,Villarreal,90,Salernitana,77,Primera División,98,Serie A,97,-,-,-,-,-
+134,César Montes,Central,26,México,2023/2024,2023-09-01,14.0,8.0,1.75,Espanyol,84,Almería,79,Segunda División,85,Primera División,98,22,3,0,-,7.24
+135,M. Berisha,Delantero Centro,25,Alemania,2023/2024,2023-08-30,14.0,12.0,1.167,FC Augsburg,82,Hoffenheim,86,Bundesliga,98,Bundesliga,98,23,9,4,-,7.47
+136,Andy Diouf,Mediocentro,20,Francia,2023/2024,2023-07-02,14.0,7.0,2.0,Basel,83,Lens,87,Liga Suiza,89,Ligue 1,92,57,3,4,-,8.03
+137,Noah Okafor,Extremo Izquierdo,23,Suiza,2023/2024,2023-07-22,14.0,20.0,0.7,Salzburg,80,Milan,93,Bundesliga Austria,89,Serie A,97,32,10,5,-,7.86
+138,Gift Orban,Delantero Centro,21,Nigeria,2023/2024,2024-01-18,14.0,15.0,0.933,KAA Gent,87,Olympique Lyonnais,86,Liga Belga,91,Ligue 1,92,30,12,0,-,7.79
+139,Sander Berge,Mediocentro,25,Noruega,2023/2024,2023-08-09,13.9,20.0,0.695,Sheffield United,83,Burnley,86,Premier League,100,Premier League,100,43,7,6,-,8.53
+140,Mark Flekken,Portero,30,Países Bajos,2023/2024,2023-07-01,13.0,10.0,1.3,SC Freiburg,89,Brentford,90,Bundesliga,98,Premier League,100,44,-,-,56,8.57
+141,Robin Gosens,Carrilero Izquierdo,29,Alemania,2023/2024,2023-08-15,13.0,15.0,0.867,Inter,98,Union Berlin,87,Serie A,97,Bundesliga,98,49,4,0,-,7.68
+142,Ismaïla Sarr,Extremo Derecho,25,Senegal,2023/2024,2023-07-24,13.0,20.0,0.65,Watford,77,Olympique Marseille,88,Championship,87,Ligue 1,92,39,10,6,-,8
+143,A. Zakharyan,Mediapunta,20,Rusia,2023/2024,2023-08-19,13.0,15.0,0.867,Dinamo Moskva,79,Real Sociedad,92,Premier League Rusia,84,Primera División,98,37,5,8,-,7.87
+144,T. Castagne,Lateral Derecho,27,Bélgica,2023/2024,2023-08-29,13.0,25.0,0.52,Leicester,89,Fulham,89,Championship,87,Premier League,100,42,2,4,-,8.33
+145,E. Emegha,Delantero Centro,20,Países Bajos,2023/2024,2023-07-22,13.0,8.0,1.625,Sturm Graz,81,Strasbourg,81,Bundesliga Austria,89,Ligue 1,92,36,10,3,-,7.72
+146,Lucas Beltrán,Delantero Centro,22,Argentina,2023/2024,2023-08-14,12.6,12.0,1.05,River Plate,88,Fiorentina,89,Copa Liga Profesional Argentina,94,Serie A,97,35,16,4,-,7.89
+147,Y. Chermiti,Delantero Centro,19,Portugal,2023/2024,2023-08-11,12.5,3.0,4.167,Sporting CP,88,Everton,89,Liga Portuguesa,86,Premier League,100,22,3,2,-,6.82
+148,Vini Souza,Mediocentro Defensivo,24,Brasil,2023/2024,2023-08-09,12.5,6.0,2.083,Lommel SK,76,Sheffield United,83,Segunda División Bélgica,78,Premier League,100,-,-,-,-,-
+149,Attila Szalai,Central,25,Hungría,2023/2024,2023-07-24,12.3,14.0,0.879,Fenerbahçe,85,Hoffenheim,86,Liga Turca,91,Bundesliga,98,52,3,2,-,8.65
+150,J. Mæhle,Lateral Derecho,26,Dinamarca,2023/2024,2023-08-12,12.2,14.0,0.871,Atalanta,93,Wolfsburg,87,Serie A,97,Bundesliga,98,36,3,3,-,7.63
+151,K. Nakamura,Extremo Izquierdo,23,Japón,2023/2024,2023-08-10,12.0,8.0,1.5,LASK,80,Stade de Reims,81,Bundesliga Austria,89,Ligue 1,92,35,17,4,-,8.37
+152,Santi Bueno,Central,24,Uruguay,2023/2024,2023-08-31,12.0,8.0,1.5,Girona,89,Wolves,90,Primera División,98,Premier League,100,36,0,1,-,7.89
+153,Murillo,Central,21,Brasil,2023/2024,2023-08-31,12.0,3.5,3.429,Corinthians,89,Nottingham Forest,86,Liga Brasileña,97,Premier League,100,27,0,0,-,7.29
+154,Wilson Odobert,Extremo Izquierdo,18,Francia,2023/2024,2023-08-12,12.0,6.0,2.0,Troyes,66,Burnley,86,Ligue 2,78,Premier League,100,32,4,2,-,7.41
+155,Matteo Pessina,Mediocentro,26,Italia,2023/2024,2023-07-01,12.0,15.0,0.8,Atalanta,93,AC Monza,85,Serie A,97,Serie A,97,-,-,-,-,-
+156,Gustav Isaksen,Extremo Derecho,22,Dinamarca,2023/2024,2023-08-08,12.0,7.5,1.6,Midtjylland,84,Lazio,91,Superliga Danesa,87,Serie A,97,45,22,7,-,8.64
+157,G. Simeone,Delantero Centro,27,Argentina,2023/2024,2023-07-01,12.0,15.0,0.8,Hellas Verona,81,Napoli,93,Serie A,97,Serie A,97,-,-,-,-,-
+158,M. Daramy,Extremo Izquierdo,21,Dinamarca,2023/2024,2023-08-11,12.0,6.0,2.0,Ajax,88,Stade de Reims,81,Eredivisie,90,Ligue 1,92,-,-,-,-,-
+159,S. Castro,Delantero Centro,19,Argentina,2023/2024,2024-01-30,12.0,7.0,1.714,Vélez Sarsfield,86,Bologna,88,Liga Profesional Argentina,94,Serie A,97,-,-,-,-,-
+160,A. Douvikas,Delantero Centro,24,Grecia,2023/2024,2023-08-28,12.0,9.0,1.333,Utrecht,83,Celta,85,Eredivisie,90,Primera División,98,38,22,4,-,8.09
+161,Jens Cajuste,Mediocentro,24,Suecia,2023/2024,2023-08-10,12.0,6.0,2.0,Stade de Reims,81,Napoli,93,Ligue 1,92,Serie A,97,33,4,1,-,7.45
+162,Loïc Badé,Central,23,Francia,2023/2024,2023-07-01,12.0,12.0,1.0,Stade Rennais,88,Sevilla,89,Ligue 1,92,Primera División,98,1,0,1,-,6.27
+163,Tim Weah,Interior Derecho,23,Estados Unidos,2023/2024,2023-07-01,11.0,14.0,0.786,Lille,89,Juventus,95,Ligue 1,92,Serie A,97,32,0,2,-,7.5
+164,Anton Stach,Mediocentro,24,Alemania,2023/2024,2023-09-01,11.0,15.0,0.733,Mainz 05,85,Hoffenheim,86,Bundesliga,98,Bundesliga,98,33,1,4,-,7.56
+165,Boubacar Traore,Mediocentro Defensivo,21,Mali,2023/2024,2023-07-01,11.0,5.0,2.2,Metz,75,Wolves,90,Ligue 2,78,Premier League,100,3,0,0,-,5.8
+166,Alidu Seidu,Central,23,Ghana,2023/2024,2024-01-29,11.0,7.0,1.571,Clermont,75,Stade Rennais,88,Ligue 1,92,Ligue 1,92,14,0,1,-,6.58
+167,J. Karlsson,Extremo Izquierdo,25,Suecia,2023/2024,2023-08-23,11.0,18.0,0.611,AZ Alkmaar,88,Bologna,88,Eredivisie,90,Serie A,97,33,13,8,-,8.04
+168,Justin Kluivert,Extremo Izquierdo,24,Países Bajos,2023/2024,2023-07-01,10.8,14.0,0.771,Roma,91,AFC Bournemouth,88,Serie A,97,Premier League,100,-,-,-,-,-
+169,N. Vlašić,Mediapunta,25,Croacia,2023/2024,2023-08-08,10.6,17.0,0.624,West Ham,92,Torino,87,Premier League,100,Serie A,97,-,-,-,-,-
+170,Tomáš Čvančara,Delantero Centro,22,República Checa,2023/2024,2023-07-14,10.5,4.0,2.625,Sparta Praha,83,B. Mönchengladbach,88,Liga Checa,84,Bundesliga,98,30,15,4,-,7.9
+171,J. Okumu,Central,26,Kenia,2023/2024,2023-07-22,10.0,4.0,2.5,KAA Gent,87,Stade de Reims,81,Liga Belga,91,Ligue 1,92,45,1,1,-,8.41
+172,D. Bakwa,Extremo Derecho,20,Francia,2023/2024,2023-08-08,10.0,4.0,2.5,Girondins Bordeaux,70,Strasbourg,81,Ligue 2,78,Ligue 1,92,38,5,7,-,7.74
+173,Brenner,Delantero Centro,23,Brasil,2023/2024,2023-07-01,10.0,8.0,1.25,Cincinnati,85,Udinese,85,MLS - Liga USA,92,Serie A,97,8,1,0,-,5.89
+174,F. Parisi,Lateral Izquierdo,22,Italia,2023/2024,2023-07-14,10.0,10.0,1.0,Empoli,82,Fiorentina,89,Serie A,97,Serie A,97,34,2,0,-,7.92
+175,R. Malinovskyi,Mediapunta,30,Ucrania,2023/2024,2023-07-01,10.0,15.0,0.667,Atalanta,93,Olympique Marseille,88,Serie A,97,Ligue 1,92,15,1,2,-,6.1
+176,Djibril Sow,Mediocentro,26,Suiza,2023/2024,2023-08-04,10.0,22.0,0.455,Eintracht Frankfurt,89,Sevilla,89,Bundesliga,98,Primera División,98,47,4,0,-,8.3
+177,A. Sørloth,Delantero Centro,27,Noruega,2023/2024,2023-07-25,10.0,12.0,0.833,RB Leipzig,96,Villarreal,90,Bundesliga,98,Primera División,98,1,0,0,-,4.51
+178,Kristjan Asllani,Mediocentro Defensivo,21,Albania,2023/2024,2023-07-01,10.0,12.0,0.833,Empoli,82,Inter,98,Serie A,97,Serie A,97,-,-,-,-,-
+179,D. Lukebakio,Extremo Derecho,25,Bélgica,2023/2024,2023-08-24,10.0,12.0,0.833,Hertha BSC,80,Sevilla,89,2. Bundesliga,85,Primera División,98,33,12,3,-,7.72
+180,Momo Cho,Extremo Derecho,19,Francia,2023/2024,2024-01-08,10.0,8.0,1.25,Real Sociedad,92,Nice,86,Primera División,98,Ligue 1,92,16,0,0,-,5.88
+181,J. Hofmann,Mediapunta,30,Alemania,2023/2024,2023-07-05,10.0,13.0,0.769,B. Mönchengladbach,88,B. Leverkusen,95,Bundesliga,98,Bundesliga,98,33,14,10,-,8.21
+182,T. Baldanzi,Mediapunta,20,Italia,2023/2024,2024-02-01,10.0,15.0,0.667,Empoli,82,Roma,91,Serie A,97,Serie A,97,14,2,0,-,6.36
+183,Natan,Central,22,Brasil,2023/2024,2023-08-07,10.0,5.5,1.818,RB Bragantino,88,Napoli,93,Liga Brasileña,97,Serie A,97,27,0,0,-,7.29
+184,A. Petagna,Delantero Centro,28,Italia,2023/2024,2023-07-01,10.0,10.0,1.0,Napoli,93,AC Monza,85,Serie A,97,Serie A,97,-,-,-,-,-
+185,Junior Mwanga,Mediocentro Defensivo,20,Francia,2023/2024,2023-08-08,10.0,4.0,2.5,Girondins Bordeaux,70,Strasbourg,81,Ligue 2,78,Ligue 1,92,35,0,1,-,7.7
+186,N. Domínguez,Mediocentro,25,Argentina,2023/2024,2023-09-01,10.0,17.0,0.588,Bologna,88,Nottingham Forest,86,Serie A,97,Premier League,100,34,3,2,-,7.8
+187,Quentin Merlin,Lateral Izquierdo,21,Francia,2023/2024,2024-01-26,10.0,10.0,1.0,Nantes,76,Olympique Marseille,88,Ligue 1,92,Ligue 1,92,18,0,1,-,6.71
+188,Farès Chaïbi,Mediapunta,20,Argelia,2023/2024,2023-08-30,10.0,10.0,1.0,Toulouse,81,Eintracht Frankfurt,89,Ligue 1,92,Bundesliga,98,41,8,6,-,8.25
+189,Mitchel Bakker,Carrilero Izquierdo,23,Países Bajos,2023/2024,2023-07-07,9.5,9.0,1.056,B. Leverkusen,95,Atalanta,93,Bundesliga,98,Serie A,97,40,4,3,-,8.16
+190,Aurèle Amenda,Central,20,Suiza,2023/2024,2024-01-24,9.5,5.0,1.9,Young Boys,84,Eintracht Frankfurt,89,Liga Suiza,89,Bundesliga,98,32,0,2,-,7.77
+191,Morgan Rogers,Extremo Izquierdo,21,Inglaterra,2023/2024,2024-02-01,9.4,2.8,3.357,Middlesbrough,81,Aston Villa,92,Championship,87,Premier League,100,33,7,8,-,7.53
+192,Valentín Barco,Lateral Izquierdo,19,Argentina,2023/2024,2024-01-20,9.15,13.0,0.704,Boca Juniors,86,Brighton & Hove Albion,92,Liga Profesional Argentina,94,Premier League,100,-,-,-,-,-
+193,W. Singo,Lateral Derecho,22,Costa de Marfil,2023/2024,2023-08-17,9.1,12.0,0.758,Torino,87,Monaco,88,Serie A,97,Ligue 1,92,35,2,2,-,7.73
+194,Sam Beukema,Central,24,Países Bajos,2023/2024,2023-07-03,9.0,4.5,2.0,AZ Alkmaar,88,Bologna,88,Eredivisie,90,Serie A,97,44,2,0,-,8.51
+195,Dan Ndoye,Extremo Derecho,22,Suiza,2023/2024,2023-08-14,9.0,3.5,2.571,Basel,83,Bologna,88,Liga Suiza,89,Serie A,97,54,7,3,-,8.07
+196,Hugo Larsson,Mediocentro,19,Suecia,2023/2024,2023-07-01,9.0,9.0,1.0,Malmö FF,81,Eintracht Frankfurt,89,Liga Sueca,88,Bundesliga,98,29,2,2,-,7.3
+197,S. Guirassy,Delantero Centro,27,Guinea,2023/2024,2023-07-01,9.0,14.0,0.643,Stade Rennais,88,Stuttgart,90,Ligue 1,92,Bundesliga,98,1,0,0,-,4.51
+198,William Pacho,Central,21,Ecuador,2023/2024,2023-07-01,9.0,11.0,0.818,Antwerp,87,Eintracht Frankfurt,89,Liga Belga,91,Bundesliga,98,50,0,1,-,8.69
+199,Isak Hien,Central,24,Suecia,2023/2024,2024-01-02,8.5,9.0,0.944,Hellas Verona,81,Atalanta,93,Serie A,97,Serie A,97,11,0,0,-,6.79
+200,M. Cancellieri,Extremo Derecho,21,Italia,2023/2024,2023-07-01,8.5,5.0,1.7,Hellas Verona,81,Lazio,91,Serie A,97,Serie A,97,-,-,-,-,-
+201,Matt Turner,Portero,29,Estados Unidos,2023/2024,2023-08-09,8.15,8.0,1.019,Arsenal,97,Nottingham Forest,86,Premier League,100,Premier League,100,7,-,-,4,6.27
+202,Max Aarons,Lateral Derecho,23,Inglaterra,2023/2024,2023-08-10,8.1,16.0,0.506,Norwich City,80,AFC Bournemouth,88,Championship,87,Premier League,100,48,1,2,-,8.22
+203,Daniel Muñoz,Lateral Derecho,27,Colombia,2023/2024,2024-01-30,8.0,10.0,0.8,Genk,87,Crystal Palace,88,Liga Belga,91,Premier League,100,29,7,1,-,7.66
+204,Isaak Touré,Central,20,Francia,2023/2024,2023-09-01,8.0,6.0,1.333,Olympique Marseille,88,Lorient,76,Ligue 1,92,Ligue 1,92,5,0,0,-,4.83
+205,Philipp Köhn,Portero,25,Suiza,2023/2024,2023-07-15,8.0,4.5,1.778,Salzburg,80,Monaco,88,Bundesliga Austria,89,Ligue 1,92,42,-,-,33,8.77
+206,Yankuba Minteh,Extremo Derecho,18,Gambia,2023/2024,2023-07-01,8.0,2.0,4.0,Odense BK,73,Newcastle,93,Superliga Danesa,87,Premier League,100,17,4,4,-,6.98
+207,Jorge De Frutos,Extremo Derecho,26,España,2023/2024,2023-08-17,8.0,8.0,1.0,Levante,82,Rayo Vallecano,84,Segunda División,85,Primera División,98,46,5,6,-,8.28
+208,Moritz Jenz,Central,24,Alemania,2023/2024,2023-07-01,8.0,7.5,1.067,Lorient,76,Wolfsburg,87,Ligue 1,92,Bundesliga,98,-,-,-,-,-
+209,Tiago Tomás,Delantero Centro,21,Portugal,2023/2024,2023-07-05,8.0,7.0,1.143,Sporting CP,88,Wolfsburg,87,Liga Portuguesa,86,Bundesliga,98,-,-,-,-,-
+210,Franck Honorat,Extremo Derecho,26,Francia,2023/2024,2023-07-11,8.0,10.0,0.8,Stade Brestois,82,B. Mönchengladbach,88,Ligue 1,92,Bundesliga,98,35,6,6,-,7.99
+211,Pablo Fornals,Mediapunta,27,España,2023/2024,2024-02-01,8.0,17.0,0.471,West Ham,92,Real Betis,90,Premier League,100,Primera División,98,23,0,0,-,6.54
+212,Sergi Darder,Mediocentro,29,España,2023/2024,2023-08-11,8.0,16.0,0.5,Espanyol,84,Mallorca,85,Segunda División,85,Primera División,98,41,7,4,-,8.51
+213,Luis Suárez,Delantero Centro,25,Colombia,2023/2024,2023-07-01,8.0,8.0,1.0,Olympique Marseille,88,Almería,79,Ligue 1,92,Primera División,98,11,3,1,-,6.29
+214,Matz Sels,Portero,31,Bélgica,2023/2024,2024-02-01,8.0,7.0,1.143,Strasbourg,81,Nottingham Forest,86,Ligue 1,92,Premier League,100,19,-,-,24,6.88
+215,F. Moumbagna,Delantero Centro,23,Camerún,2023/2024,2024-01-20,8.0,7.0,1.143,FK Bodo Glimt,84,Olympique Marseille,88,Liga Noruega,84,Ligue 1,92,12,6,1,-,7.38
+216,Jean Bahoya,Extremo Izquierdo,18,Francia,2023/2024,2024-01-25,8.0,2.5,3.2,Angers SCO,72,Eintracht Frankfurt,89,Ligue 2,78,Bundesliga,98,21,5,2,-,6.69
+217,G. Kondogbia,Mediocentro Defensivo,30,República Centroafricana,2023/2024,2023-07-01,8.0,14.0,0.571,Atlético,94,Olympique Marseille,88,Primera División,98,Ligue 1,92,27,0,2,-,6.78
+218,Václav Černý,Extremo Derecho,25,República Checa,2023/2024,2023-07-01,8.0,8.0,1.0,Twente,88,Wolfsburg,87,Eredivisie,90,Bundesliga,98,41,15,13,-,8.7
+219,G. Caprari,Mediapunta,29,Italia,2023/2024,2023-07-01,8.0,8.0,1.0,Hellas Verona,81,AC Monza,85,Serie A,97,Serie A,97,-,-,-,-,-
+220,Lorenzo Lucca,Delantero Centro,22,Italia,2024/2025,2024-07-01,8.0,12.0,0.667,Pisa SC,75,Udinese,85,Serie B,83,Serie A,97,-,-,-,-,-
+221,Dara O'shea,Central,24,Irlanda,2023/2024,2023-07-01,7.8,5.0,1.56,West Bromwich Albion,80,Burnley,86,Championship,87,Premier League,100,41,2,1,-,8.47
+222,Artem Dovbyk,Delantero Centro,26,Ucrania,2023/2024,2023-08-06,7.75,15.0,0.517,Dnipro-1,84,Girona,89,Liga Ucraniana,86,Primera División,98,39,29,7,-,8.62
+223,K. Nedeljkovic,Lateral Derecho,18,Serbia,2023/2024,2024-01-22,7.6,2.5,3.04,Crvena Zvezda,82,Aston Villa,92,Liga Serbia,80,Premier League,100,20,0,2,-,7.18
+224,N. Nkounkou,Lateral Izquierdo,22,Francia,2023/2024,2023-09-01,7.5,5.0,1.5,Saint-Étienne,74,Eintracht Frankfurt,89,Ligue 2,78,Bundesliga,98,20,6,7,-,8.09
+225,Ez Abde,Extremo Izquierdo,21,Marruecos,2023/2024,2023-09-01,7.5,15.0,0.5,Barcelona,96,Real Betis,90,Primera División,98,Primera División,98,-,-,-,-,-
+226,Ibrahima Koné,Delantero Centro,24,Mali,2023/2024,2023-08-16,7.5,4.0,1.875,Lorient,76,Almería,79,Ligue 1,92,Primera División,98,40,9,1,-,7.85
+227,Diogo Leite,Central,24,Portugal,2023/2024,2023-07-01,7.5,15.0,0.5,Porto,88,Union Berlin,87,Liga Portuguesa,86,Bundesliga,98,-,-,-,-,-
+228,Cristian Volpato,Mediapunta,19,Italia,2023/2024,2023-07-01,7.5,3.0,2.5,Roma,91,Sassuolo,84,Serie A,97,Serie A,97,11,1,1,-,6.14
+229,F. Mendy,Central,22,Senegal,2023/2024,2023-07-20,7.5,3.0,2.5,Amiens SC,64,Lorient,76,Ligue 2,78,Ligue 1,92,32,1,0,-,7.76
+230,Cyle Larin,Delantero Centro,28,Canadá,2023/2024,2023-08-03,7.5,8.0,0.938,Real Valladolid,82,Mallorca,85,Segunda División,85,Primera División,98,19,8,3,-,7
+231,A. Milik,Delantero Centro,29,Polonia,2023/2024,2023-07-01,7.3,8.0,0.913,Olympique Marseille,88,Juventus,95,Ligue 1,92,Serie A,97,2,0,0,-,5.69
+232,A. Fulgini,Mediapunta,26,Francia,2023/2024,2023-07-01,7.2,9.0,0.8,-,-,Lens,87,-,-,Ligue 1,92,-,-,-,-,-
+233,A. Fulgini,Mediapunta,26,Francia,2023/2024,2023-07-01,7.2,9.0,0.8,Mainz 05,85,Lens,87,Bundesliga,98,Ligue 1,92,18,0,2,-,6.03
+234,Julian Weigl,Mediocentro Defensivo,27,Alemania,2023/2024,2023-07-01,7.18,10.0,0.718,Benfica,88,B. Mönchengladbach,88,Liga Portuguesa,86,Bundesliga,98,3,0,0,-,4.86
+235,R. Bellanova,Lateral Derecho,23,Italia,2023/2024,2023-07-01,7.0,5.0,1.4,Cagliari,81,Torino,87,Serie A,97,Serie A,97,-,-,-,-,-
+236,R. Malinovskyi,Mediapunta,30,Ucrania,2023/2024,2024-01-31,7.0,10.0,0.7,Olympique Marseille,88,Genoa,84,Ligue 1,92,Serie A,97,-,-,-,-,-
+237,T. Buchanan,Carrilero Derecho,24,Canadá,2023/2024,2024-01-05,7.0,8.0,0.875,Club Brugge,87,Inter,98,Liga Belga,91,Serie A,97,20,3,3,-,7.63
+238,Elia Caprile,Portero,21,Italia,2023/2024,2023-07-24,7.0,4.0,1.75,SSC Bari,75,Napoli,93,Serie B,83,Serie A,97,43,-,-,37,8.66
+239,Lucas Boyé,Delantero Centro,27,Argentina,2023/2024,2023-08-30,7.0,10.0,0.7,Elche,79,Granada,80,Segunda División,85,Primera División,98,37,7,3,-,7.67
+240,Yann Bisseck,Central,22,Alemania,2023/2024,2023-07-12,7.0,5.0,1.4,AGF Aarhus,79,Inter,98,Superliga Danesa,87,Serie A,97,35,5,1,-,8.33
+241,Yann Sommer,Portero,34,Suiza,2023/2024,2023-08-07,6.75,5.0,1.35,Bayern München,99,Inter,98,Bundesliga,98,Serie A,97,25,-,-,31,7.26
+242,Dion Lopy,Mediocentro Defensivo,21,Senegal,2023/2024,2023-08-05,6.5,4.0,1.625,Stade de Reims,81,Almería,79,Ligue 1,92,Primera División,98,31,0,1,-,7.27
+243,Tiago Santos,Lateral Derecho,20,Portugal,2023/2024,2023-07-05,6.5,3.5,1.857,Estoril,73,Lille,89,Liga Portuguesa,86,Ligue 1,92,34,0,5,-,7.74
+244,Dina Ebimbe,Interior Derecho,22,Francia,2023/2024,2023-07-01,6.5,10.0,0.65,PSG,91,Eintracht Frankfurt,89,Ligue 1,92,Bundesliga,98,-,-,-,-,-
+245,Raúl García,Delantero Centro,22,España,2023/2024,2023-08-10,6.5,4.0,1.625,Real Betis,90,Osasuna,86,Primera División,98,Primera División,98,-,-,-,-,-
+246,Raúl Jiménez,Delantero Centro,32,México,2023/2024,2023-07-25,6.4,6.0,1.067,Wolves,90,Fulham,89,Premier League,100,Premier League,100,20,3,1,-,6.95
+247,Pablo Marí,Central,29,España,2023/2024,2023-07-01,6.2,5.0,1.24,Arsenal,97,AC Monza,85,Premier League,100,Serie A,97,-,-,-,-,-
+248,Daniel Boloca,Mediocentro Defensivo,24,Italia,2023/2024,2023-07-13,6.0,3.5,1.714,Frosinone,83,Sassuolo,84,Serie A,97,Serie A,97,32,2,0,-,7.94
+249,Johnny Cardoso,Mediocentro Defensivo,22,Estados Unidos,2023/2024,2024-01-01,6.0,6.0,1.0,Internacional,89,Real Betis,90,Liga Brasileña,97,Primera División,98,-,-,-,-,-
+250,Josh Doig,Lateral Izquierdo,21,Escocia,2023/2024,2024-01-20,6.0,7.0,0.857,Hellas Verona,81,Sassuolo,84,Serie A,97,Serie A,97,14,0,0,-,6.56
+251,Sergio Akieme,Lateral Izquierdo,26,España,2023/2024,2024-02-01,6.0,8.0,0.75,Almería,79,Stade de Reims,81,Primera División,98,Ligue 1,92,19,2,0,-,6.74
+252,S. Omorodion,Delantero Centro,19,España,2023/2024,2023-08-21,6.0,0.2,30.0,Granada,80,Atlético,94,Primera División,98,Primera División,98,-,-,-,-,-
+253,N. Bajrami,Mediapunta,24,Albania,2023/2024,2023-07-01,6.0,7.5,0.8,Empoli,82,Sassuolo,84,Serie A,97,Serie A,97,20,1,2,-,6.79
+254,S. Mulattieri,Delantero Centro,22,Italia,2023/2024,2023-07-07,6.0,4.5,1.333,Inter,98,Sassuolo,84,Serie A,97,Serie A,97,-,-,-,-,-
+255,Jhon Solis,Mediocentro,18,Colombia,2023/2024,2023-09-01,6.0,0.7,8.571,At. Nacional,80,Girona,89,Clausura Colombia,88,Primera División,98,32,0,4,-,7.57
+256,Junior Adamu,Delantero Centro,22,Austria,2023/2024,2023-07-01,6.0,8.0,0.75,Salzburg,80,SC Freiburg,89,Bundesliga Austria,89,Bundesliga,98,40,14,5,-,8.11
+257,Sergio Arribas,Mediapunta,21,España,2023/2024,2023-08-09,6.0,5.0,1.2,RM Castilla,63,Almería,79,Primera Federación,69,Primera División,98,37,21,8,-,8.38
+258,Ryan Giles,Lateral Izquierdo,23,Inglaterra,2023/2024,2023-07-28,5.85,9.0,0.65,Wolves,90,Luton Town,83,Premier League,100,Premier League,100,-,-,-,-,-
+259,Auston Trusty,Central,24,Estados Unidos,2023/2024,2023-08-03,5.8,10.0,0.58,Arsenal,97,Sheffield United,83,Premier League,100,Premier League,100,-,-,-,-,-
+260,M. Mohamed,Delantero Centro,25,Egipto,2023/2024,2023-07-01,5.75,6.0,0.958,Galatasaray SK,86,Nantes,76,Liga Turca,91,Ligue 1,92,-,-,-,-,-
+261,Angelo Stiller,Mediocentro Defensivo,22,Alemania,2023/2024,2023-08-25,5.5,5.0,1.1,Hoffenheim,86,Stuttgart,90,Bundesliga,98,Bundesliga,98,21,1,1,-,6.53
+262,Rogério,Lateral Izquierdo,25,Brasil,2023/2024,2023-08-05,5.5,5.5,1.0,Sassuolo,84,Wolfsburg,87,Serie A,97,Bundesliga,98,37,0,3,-,7.65
+263,Douglas,Mediocentro,26,Brasil,2023/2024,2023-08-12,5.5,4.5,1.222,PAOK,81,Nantes,76,Super League Griega,82,Ligue 1,92,36,5,0,-,7.86
+264,B. Yıldırım,Delantero Centro,21,Turquía,2023/2024,2023-08-29,5.4,2.7,2.0,Hatayspor,74,Stade Rennais,88,Liga Turca,91,Ligue 1,92,17,4,1,-,6.41
+265,Carles Pérez,Extremo Derecho,25,España,2023/2024,2023-07-01,5.2,5.0,1.04,Roma,91,Celta,85,Serie A,97,Primera División,98,-,-,-,-,-
+266,Tiago Djaló,Central,23,Portugal,2023/2024,2024-01-22,5.1,15.0,0.34,Lille,89,Juventus,95,Ligue 1,92,Serie A,97,-,-,-,-,-
+267,T. Teuma,Mediocentro,29,Malta,2023/2024,2023-07-07,5.05,5.0,1.01,Union Saint-Gilloise,87,Stade de Reims,81,Liga Belga,91,Ligue 1,92,52,14,15,-,8.72
+268,Pepelu,Mediocentro Defensivo,24,España,2023/2024,2023-07-08,5.0,3.0,1.667,Levante,82,Valencia,87,Segunda División,85,Primera División,98,47,1,2,-,8.18
+269,A. Delort,Delantero Centro,31,Argelia,2023/2024,2023-07-01,5.0,7.0,0.714,Nice,86,Nantes,76,Ligue 1,92,Ligue 1,92,18,7,1,-,6.85
+270,Tom Krauß,Mediocentro,22,Alemania,2023/2024,2023-07-14,5.0,7.0,0.714,RB Leipzig,96,Mainz 05,85,Bundesliga,98,Bundesliga,98,-,-,-,-,-
+271,Adson,Extremo Derecho,22,Brasil,2023/2024,2023-08-23,5.0,6.0,0.833,Corinthians,89,Nantes,76,Liga Brasileña,97,Ligue 1,92,41,5,3,-,8.11
+272,Cédric Zesiger,Central,25,Suiza,2023/2024,2023-07-01,5.0,5.5,0.909,Young Boys,84,Wolfsburg,87,Liga Suiza,89,Bundesliga,98,41,2,1,-,8.65
+273,Clinton Mata,Lateral Derecho,30,Angola,2023/2024,2023-07-06,5.0,4.5,1.111,Club Brugge,87,Olympique Lyonnais,86,Liga Belga,91,Ligue 1,92,30,1,2,-,7.65
+274,Marc Pubill,Lateral Derecho,20,España,2023/2024,2023-08-09,5.0,1.0,5.0,Levante,82,Almería,79,Segunda División,85,Primera División,98,31,2,1,-,7.74
+275,Cenk Özkacar,Central,22,Turquía,2023/2024,2023-07-01,5.0,5.0,1.0,Olympique Lyonnais,86,Valencia,87,Ligue 1,92,Primera División,98,-,-,-,-,-
+276,M. Bamba,Delantero Centro,22,Costa de Marfil,2023/2024,2024-01-26,5.0,1.2,4.167,Wolfsberger AC,80,Lorient,76,Bundesliga Austria,89,Ligue 1,92,17,8,2,-,6.98
+277,C. Bakambu,Delantero Centro,32,República Democrática del Congo,2023/2024,2024-02-01,5.0,2.8,1.786,Galatasaray SK,86,Real Betis,90,Liga Turca,91,Primera División,98,16,2,0,-,5.9
+278,Carl Starfelt,Central,28,Suecia,2023/2024,2023-08-10,5.0,6.5,0.769,Celtic,82,Celta,85,Liga Escocia,85,Primera División,98,37,3,1,-,8.25
+279,Daniel Peretz,Portero,23,Israel,2023/2024,2023-08-25,5.0,4.0,1.25,Maccabi Tel Aviv,81,Bayern München,99,Liga Israel,86,Bundesliga,98,45,-,-,30,8.76
+280,Lorenzo Pirola,Central,21,Italia,2023/2024,2023-07-01,5.0,8.0,0.625,Inter,98,Salernitana,77,Serie A,97,Serie A,97,-,-,-,-,-
+281,Matěj Kovář,Portero,23,República Checa,2023/2024,2023-08-15,5.0,1.8,2.778,Man. Utd Sub 21,49,B. Leverkusen,95,Premier League 2 Division One,2,Bundesliga,98,-,-,-,-,-
+282,Sergio Camello,Delantero Centro,22,España,2023/2024,2023-08-17,5.0,10.0,0.5,Atlético,94,Rayo Vallecano,84,Primera División,98,Primera División,98,-,-,-,-,-
+283,Y. Maleh,Mediocentro,24,Marruecos,2023/2024,2023-07-01,5.0,4.5,1.111,Fiorentina,89,Lecce,81,Serie A,97,Serie A,97,12,0,0,-,6.09
+284,Fran García,Lateral Izquierdo,23,España,2023/2024,2023-07-01,5.0,12.0,0.417,Rayo Vallecano,84,Real Madrid,99,Primera División,98,Primera División,98,40,2,3,-,8.46
+285,A. Harit,Mediapunta,26,Marruecos,2023/2024,2023-07-01,5.0,12.0,0.417,Schalke 04,77,Olympique Marseille,88,Bundesliga,98,Ligue 1,92,-,-,-,-,-
+286,Y. Herrera,Mediocentro,25,Venezuela,2023/2024,2023-07-14,5.0,5.0,1.0,Manchester City,100,Girona,89,Premier League,100,Primera División,98,-,-,-,-,-
+287,Ansgar Knauff,Extremo Derecho,21,Alemania,2023/2024,2023-07-01,5.0,8.0,0.625,B. Dortmund,95,Eintracht Frankfurt,89,Bundesliga,98,Bundesliga,98,-,-,-,-,-
+288,Matteo Prati,Mediocentro Defensivo,19,Italia,2023/2024,2023-08-17,5.0,1.0,5.0,SPAL,61,Cagliari,81,Serie C,65,Serie A,97,20,2,1,-,7.13
+289,G. Fabbian,Mediocentro,20,Italia,2023/2024,2023-08-20,5.0,6.0,0.833,Inter,98,Bologna,88,Serie A,97,Serie A,97,-,-,-,-,-
+290,A. Bayindir,Portero,25,Turquía,2023/2024,2023-09-01,5.0,11.0,0.455,Fenerbahçe,85,Manchester United,95,Liga Turca,91,Premier League,100,40,-,-,45,8.59
+291,Javi Galán,Lateral Izquierdo,28,España,2023/2024,2023-07-03,5.0,12.0,0.417,Celta,85,Atlético,94,Primera División,98,Primera División,98,40,1,4,-,8.37
+292,M. Wieteska,Central,26,Polonia,2023/2024,2023-08-29,5.0,3.0,1.667,Clermont,75,Cagliari,81,Ligue 1,92,Serie A,97,35,0,1,-,8.01
+293,Stefan Posch,Lateral Derecho,26,Austria,2023/2024,2023-07-01,5.0,14.0,0.357,Hoffenheim,86,Bologna,88,Bundesliga,98,Serie A,97,2,0,0,-,5.31
+294,T. Kristensen,Central,21,Dinamarca,2023/2024,2023-09-01,5.0,0.7,7.143,AGF Aarhus,79,Udinese,85,Superliga Danesa,87,Serie A,97,22,1,0,-,7.54
+295,O. Vlachodimos,Portero,29,Grecia,2023/2024,2023-09-01,4.9,16.0,0.306,Benfica,88,Nottingham Forest,86,Liga Portuguesa,86,Premier League,100,54,-,-,39,8.73
+296,Y. Vertessen,Delantero Centro,23,Bélgica,2023/2024,2024-02-01,4.75,4.0,1.188,PSV,88,Union Berlin,87,Eredivisie,90,Bundesliga,98,29,5,2,-,6.68
+297,Miloš Luković,Delantero Centro,18,Serbia,2023/2024,2024-01-13,4.7,5.0,0.94,IMT Novi Beograd,68,Strasbourg,81,Liga Serbia,80,Ligue 1,92,38,18,2,-,8.08
+298,Tahith Chong,Extremo Derecho,23,Países Bajos,2023/2024,2023-07-14,4.7,3.2,1.469,Birmingham City,69,Luton Town,83,Championship,87,Premier League,100,41,4,5,-,8.34
+299,Bénie Traoré,Delantero Centro,20,Costa de Marfil,2023/2024,2023-07-18,4.6,3.5,1.314,Häcken,80,Sheffield United,83,Liga Sueca,88,Premier League,100,20,15,6,-,8.25
+300,T. Allende,Extremo Derecho,24,Argentina,2023/2024,2024-01-31,4.5,4.5,1.0,Godoy Cruz,86,Celta,85,Liga Profesional Argentina,94,Primera División,98,-,-,-,-,-
+301,Y. Konak,Mediocentro Defensivo,18,Turquía,2023/2024,2024-01-11,4.5,1.8,2.5,Sivasspor,82,Brentford,90,Liga Turca,91,Premier League,100,17,0,1,-,6.63
+302,Akor Adams,Delantero Centro,23,Nigeria,2023/2024,2023-08-07,4.5,4.0,1.125,Lillestrom SK,75,Montpellier,80,Liga Noruega,84,Ligue 1,92,18,17,2,-,7.9
+303,F. Terracciano,Lateral Derecho,20,Italia,2023/2024,2024-01-08,4.5,3.5,1.286,Hellas Verona,81,Milan,93,Serie A,97,Serie A,97,19,0,1,-,6.67
+304,M. Ilić,Central,20,Serbia,2023/2024,2024-01-18,4.5,3.0,1.5,Partizan Belgrade,81,Bologna,88,Liga Serbia,80,Serie A,97,22,1,1,-,7.63
+305,N. Bentaleb,Mediocentro Defensivo,28,Argelia,2023/2024,2023-08-28,4.5,7.0,0.643,Angers SCO,72,Lille,89,Ligue 2,78,Ligue 1,92,33,4,4,-,7.72
+306,Óscar Cortés,Extremo Derecho,19,Colombia,2023/2024,2023-07-14,4.5,4.2,1.071,Millonarios,80,Lens,87,Clausura Colombia,88,Ligue 1,92,19,6,3,-,7.04
+307,Edgar,Central,26,España,2023/2024,2023-07-06,4.5,9.0,0.5,Real Betis,90,Almería,79,Primera División,98,Primera División,98,31,1,0,-,7.69
+308,Aron Donnum,Extremo Derecho,25,Noruega,2023/2024,2023-09-01,4.5,3.0,1.5,Standard de Liège,79,Toulouse,81,Liga Belga,91,Ligue 1,92,41,3,7,-,8.46
+309,Xavi Simons,Mediapunta,20,Países Bajos,2023/2024,2023-07-18,4.0,40.0,0.1,PSV,88,PSG,91,Eredivisie,90,Ligue 1,92,48,22,11,-,8.82
+310,I. Miramón,Mediocentro Defensivo,20,Argentina,2023/2024,2023-08-10,4.0,4.0,1.0,Gimnasia La Plata,83,Lille,89,Liga Profesional Argentina,94,Ligue 1,92,27,0,0,-,6.89
+311,M. Obafemi,Delantero Centro,22,Irlanda,2023/2024,2023-07-01,4.0,5.0,0.8,Swansea City,77,Burnley,86,Championship,87,Premier League,100,19,3,1,-,6.49
+312,Chimy Ávila,Delantero Centro,29,Argentina,2023/2024,2024-02-01,4.0,3.5,1.143,Osasuna,86,Real Betis,90,Primera División,98,Primera División,98,19,2,3,-,6.33
+313,M. Berisha,Delantero Centro,25,Alemania,2023/2024,2023-07-02,4.0,12.0,0.333,Fenerbahçe,85,FC Augsburg,82,Liga Turca,91,Bundesliga,98,1,1,0,-,5.77
+314,Olivier Deman,Carrilero Izquierdo,23,Bélgica,2023/2024,2023-08-31,4.0,3.0,1.333,Cercle Brugge,83,Werder Bremen,83,Liga Belga,91,Bundesliga,98,38,1,5,-,7.9
+315,J. Ngankam,Delantero Centro,22,Alemania,2023/2024,2023-07-14,4.0,5.0,0.8,Hertha BSC,80,Eintracht Frankfurt,89,2. Bundesliga,85,Bundesliga,98,18,4,1,-,6.3
+316,U. Garcia,Lateral Izquierdo,28,Suiza,2023/2024,2024-01-16,4.0,3.0,1.333,Young Boys,84,Olympique Marseille,88,Liga Suiza,89,Ligue 1,92,22,1,5,-,7.48
+317,A. Salama,Delantero Centro,22,Francia,2023/2024,2023-07-01,4.0,1.5,2.667,Angers SCO,72,Stade de Reims,81,Ligue 2,78,Ligue 1,92,28,3,1,-,6.62
+318,A. Tosin,Delantero Centro,25,Benin,2023/2024,2023-07-25,4.0,3.2,1.25,Zurich,83,Lorient,76,Liga Suiza,89,Ligue 1,92,39,16,2,-,7.83
+319,O. Alderete,Central,26,Paraguay,2023/2024,2023-07-01,4.0,4.0,1.0,Hertha BSC,80,Getafe,86,Bundesliga,98,Primera División,98,-,-,-,-,-
+320,M. Guilavogui,Extremo Derecho,25,Guinea,2023/2024,2023-07-01,4.0,2.5,1.6,Paris FC,71,Lens,87,Ligue 2,78,Ligue 1,92,36,18,4,-,7.94
+321,I. Sulemana,Mediocentro Defensivo,20,Ghana,2023/2024,2023-07-01,4.0,1.5,2.667,Hellas Verona,81,Cagliari,81,Serie A,97,Serie A,97,17,0,0,-,6.09
+322,Antonio Blanco,Mediocentro Defensivo,23,España,2023/2024,2023-07-25,4.0,5.0,0.8,Real Madrid,99,Deportivo Alavés,83,Primera División,98,Primera División,98,-,-,-,-,-
+323,Kevin Volland,Delantero Centro,31,Alemania,2023/2024,2023-08-17,4.0,8.0,0.5,Monaco,88,Union Berlin,87,Ligue 1,92,Bundesliga,98,23,6,2,-,6.88
+324,Skelly Alvero,Mediocentro,21,Francia,2023/2024,2023-07-05,4.0,3.0,1.333,Sochaux,67,Olympique Lyonnais,86,Ligue 2,78,Ligue 1,92,33,2,1,-,7.39
+325,W. Falcone,Portero,28,Italia,2023/2024,2023-07-27,4.0,5.0,0.8,Sampdoria,76,Lecce,81,Serie A,97,Serie A,97,-,-,-,-,-
+326,F. Acerbi,Central,35,Italia,2023/2024,2023-07-01,4.0,4.0,1.0,Lazio,91,Inter,98,Serie A,97,Serie A,97,-,-,-,-,-
+327,N. Krstović,Delantero Centro,23,Montenegro,2023/2024,2023-08-18,3.9,2.2,1.773,DAC,77,Lecce,81,Liga Eslovaquia,82,Serie A,97,35,26,4,-,8.64
+328,O. Christensen,Portero,24,Dinamarca,2023/2024,2023-08-10,3.8,4.0,0.95,Hertha BSC,80,Fiorentina,89,2. Bundesliga,85,Serie A,97,34,-,-,72,7.71
+329,Woo-Yeong Jeong,Mediapunta,23,Corea del Sur,2023/2024,2023-07-11,3.8,3.5,1.086,SC Freiburg,89,Stuttgart,90,Bundesliga,98,Bundesliga,98,34,2,2,-,7.07
+330,Andrej Ilic,Delantero Centro,23,Serbia,2023/2024,2024-02-01,3.75,2.3,1.63,Valerenga IF,72,Lille,89,Segunda Noruega,70,Ligue 1,92,-,-,-,-,-
+331,A. Cragno,Portero,29,Italia,2023/2024,2023-07-01,3.6,3.0,1.2,Cagliari,81,AC Monza,85,Serie B,83,Serie A,97,-,-,-,-,-
+332,Adryelson,Central,25,Brasil,2023/2024,2024-01-05,3.58,8.0,0.448,Botafogo,89,Olympique Lyonnais,86,Liga Brasileña,97,Ligue 1,92,-,-,-,-,-
+333,Salvatore Esposito,Mediocentro Defensivo,22,Italia,2023/2024,2023-07-01,3.58,3.3,1.085,SPAL,61,Spezia,76,Serie B,83,Serie A,97,19,2,2,-,7.03
+334,Mads Andersen,Central,25,Dinamarca,2023/2024,2023-07-03,3.5,2.0,1.75,Barnsley,75,Luton Town,83,League One,78,Premier League,100,51,2,2,-,8.64
+335,Ruben Aguilar,Lateral Derecho,30,Francia,2023/2024,2023-09-01,3.5,7.0,0.5,Monaco,88,Lens,87,Ligue 1,92,Ligue 1,92,23,0,0,-,6.89
+336,M. Pellegrino,Central,21,Argentina,2023/2024,2023-08-22,3.5,0.4,8.75,Platense,82,Milan,93,Liga Profesional Argentina,94,Serie A,97,17,1,0,-,7.18
+337,Hudson-Odoi,Extremo Izquierdo,22,Inglaterra,2023/2024,2023-09-01,3.5,15.0,0.233,Chelsea,94,Nottingham Forest,86,Premier League,100,Premier League,100,-,-,-,-,-
+338,Portu,Extremo Derecho,31,España,2023/2024,2023-07-01,3.5,3.5,1.0,Real Sociedad,92,Getafe,86,Primera División,98,Primera División,98,-,-,-,-,-
+339,M. Caufriez,Central,26,Bélgica,2023/2024,2023-07-01,3.5,2.5,1.4,Spartak Moskva,79,Clermont,75,Premier League Rusia,84,Ligue 1,92,1,0,0,-,4.87
+340,G. Álvarez,Central,23,Uruguay,2023/2024,2023-07-01,3.5,5.0,0.7,Boston River,79,Getafe,86,Torneo Intermedio Uruguay,89,Primera División,98,-,-,-,-,-
+341,V. Lazaro,Carrilero Izquierdo,27,Austria,2023/2024,2023-08-23,3.4,5.0,0.68,Inter,98,Torino,87,Serie A,97,Serie A,97,-,-,-,-,-
+342,Oriol Romeu,Mediocentro Defensivo,31,España,2023/2024,2023-07-19,3.4,5.0,0.68,Girona,89,Barcelona,96,Primera División,98,Primera División,98,34,2,0,-,8.03
+343,Lucas Perri,Portero,26,Brasil,2023/2024,2024-01-05,3.25,8.0,0.406,Botafogo,89,Olympique Lyonnais,86,Liga Brasileña,97,Ligue 1,92,-,-,-,-,-
+344,M. Sagnan,Central,24,Mali,2023/2024,2024-02-01,3.2,2.5,1.28,Utrecht,83,Montpellier,80,Eredivisie,90,Ligue 1,92,14,1,0,-,6.54
+345,Ondrej Duda,Mediocentro,28,Eslovaquia,2023/2024,2023-07-01,3.1,3.4,0.912,Köln,84,Hellas Verona,81,Bundesliga,98,Serie A,97,18,2,0,-,6.5
+346,Luca Lipani,Mediocentro Defensivo,18,Italia,2023/2024,2023-08-08,3.0,0.4,7.5,Genoa,84,Sassuolo,84,Serie A,97,Serie A,97,2,0,1,-,4.91
+347,H. Valdimarsson,Portero,22,Islandia,2023/2024,2024-01-26,3.0,1.8,1.667,IF Elfsborg,80,Brentford,90,Liga Sueca,88,Premier League,100,-,-,-,-,-
+348,M. Łęgowski,Mediocentro Defensivo,20,Polonia,2023/2024,2023-08-17,3.0,1.8,1.667,Pogon Szczecin,77,Salernitana,77,Liga Polaca,86,Serie A,97,27,3,3,-,7.33
+349,T. Noslin,Extremo Derecho,24,Países Bajos,2023/2024,2024-01-23,3.0,0.9,3.333,Fortuna Sittard,73,Hellas Verona,81,Eredivisie,90,Serie A,97,14,4,2,-,7.03
+350,Saidou Sow,Central,21,Guinea,2023/2024,2023-08-09,3.0,3.5,0.857,Saint-Étienne,74,Strasbourg,81,Ligue 2,78,Ligue 1,92,26,0,0,-,7.09
+351,Tiago Morais,Extremo Izquierdo,20,Portugal,2023/2024,2024-01-30,3.0,2.0,1.5,Boavista,73,Lille,89,Liga Portuguesa,86,Ligue 1,92,20,6,4,-,7.52
+352,N. Brown,Lateral Izquierdo,20,Alemania,2023/2024,2024-01-03,3.0,3.0,1.0,Nürnberg,71,Eintracht Frankfurt,89,2. Bundesliga,85,Bundesliga,98,32,0,6,-,7.68
+353,A. Izzo,Central,31,Italia,2023/2024,2023-07-05,3.0,3.0,1.0,Torino,87,AC Monza,85,Serie A,97,Serie A,97,-,-,-,-,-
+354,Hannes Delcroix,Central,24,Bélgica,2023/2024,2023-08-22,3.0,2.0,1.5,Anderlecht,87,Burnley,86,Liga Belga,91,Premier League,100,25,1,0,-,7.33
+355,Samú Costa,Mediocentro Defensivo,22,Portugal,2023/2024,2023-08-10,3.0,5.0,0.6,Almería,79,Mallorca,85,Primera División,98,Primera División,98,33,1,2,-,7.4
+356,Adrian Mazilu,Extremo Derecho,18,Rumanía,2023/2024,2024-01-01,3.0,2.5,1.2,Farul Constanța,77,Brighton & Hove Albion,92,Liga Rumana,82,Premier League,100,25,2,2,-,6.96
+357,I. Cissoko,Extremo Izquierdo,20,Países Bajos,2023/2024,2023-07-01,3.0,2.5,1.2,NEC Nijmegen,81,Toulouse,81,Eredivisie,90,Ligue 1,92,28,2,0,-,6.61
+358,Carlos Dotor,Mediocentro,22,España,2023/2024,2023-07-20,3.0,0.7,4.286,RM Castilla,63,Celta,85,Primera Federación,69,Primera División,98,29,12,3,-,7.81
+359,Paul,Mediocentro Defensivo,25,Costa de Marfil,2023/2024,2023-09-01,3.0,3.5,0.857,Real Betis,90,Olympique Lyonnais,86,Primera División,98,Ligue 1,92,18,0,0,-,6.22
+360,K. Amian,Lateral Derecho,25,Francia,2023/2024,2024-01-25,3.0,2.2,1.364,Spezia,76,Nantes,76,Serie B,83,Ligue 1,92,20,0,0,-,7.12
+361,L. Tchaouna,Extremo Derecho,19,Francia,2023/2024,2023-08-31,3.0,1.8,1.667,Stade Rennais,88,Salernitana,77,Ligue 1,92,Serie A,97,-,-,-,-,-
+362,S. Becker,Delantero Centro,28,Surinam,2023/2024,2024-01-18,3.0,12.0,0.25,Union Berlin,87,Real Sociedad,92,Bundesliga,98,Primera División,98,18,3,1,-,6.33
+363,M. Kaba,Mediocentro,21,Francia,2023/2024,2023-08-14,3.0,3.0,1.0,Valenciennes,58,Lecce,81,Ligue 2,78,Serie A,97,33,5,1,-,8.05
+364,M. Camara,Mediocentro,25,Francia,2023/2024,2023-07-01,3.0,3.0,1.0,Saint-Étienne,74,Stade Brestois,82,Ligue 2,78,Ligue 1,92,4,0,1,-,5.31
+365,M. Payero,Mediocentro,24,Argentina,2023/2024,2023-09-01,3.0,3.5,0.857,Middlesbrough,81,Udinese,85,Championship,87,Serie A,97,-,-,-,-,-
+366,Marius Bülter,Extremo Izquierdo,30,Alemania,2023/2024,2023-07-06,3.0,3.0,1.0,Schalke 04,77,Hoffenheim,86,2. Bundesliga,85,Bundesliga,98,35,11,1,-,7.87
+367,P. Mazzocchi,Lateral Derecho,28,Italia,2023/2024,2024-01-05,3.0,4.0,0.75,Salernitana,77,Napoli,93,Serie A,97,Serie A,97,19,0,1,-,6.47
+368,Marco Richter,Mediapunta,25,Alemania,2023/2024,2023-08-22,3.0,5.0,0.6,Hertha BSC,80,Mainz 05,85,2. Bundesliga,85,Bundesliga,98,29,6,5,-,7.1
+369,Á. Odriozola,Lateral Derecho,27,España,2023/2024,2023-09-01,3.0,5.0,0.6,Real Madrid,99,Real Sociedad,92,Primera División,98,Primera División,98,6,0,0,-,5
+370,M. Nakamba,Mediocentro Defensivo,29,Zimbabue,2023/2024,2023-07-20,2.9,4.0,0.725,Aston Villa,92,Luton Town,83,Premier League,100,Premier League,100,-,-,-,-,-
+371,T. Kaminski,Portero,30,Bélgica,2023/2024,2023-08-03,2.9,2.2,1.318,Blackburn Rovers,77,Luton Town,83,Championship,87,Premier League,100,29,-,-,37,7.37
+372,Jacob Brown,Delantero Centro,25,Escocia,2023/2024,2023-08-10,2.9,6.0,0.483,Stoke City,74,Luton Town,83,Championship,87,Premier League,100,42,9,1,-,8.33
+373,Gino Infantino,Mediocentro,20,Argentina,2023/2024,2023-08-03,2.85,3.0,0.95,Rosario Central,85,Fiorentina,89,Liga Profesional Argentina,94,Serie A,97,17,1,1,-,6.17
+374,Adrien Tameze,Mediocentro Defensivo,29,Francia,2023/2024,2023-07-23,2.8,6.0,0.467,Hellas Verona,81,Torino,87,Serie A,97,Serie A,97,39,0,0,-,7.61
+375,Lucas Tousart,Mediocentro Defensivo,26,Francia,2023/2024,2023-07-19,2.8,9.0,0.311,Hertha BSC,80,Union Berlin,87,2. Bundesliga,85,Bundesliga,98,34,6,2,-,7.97
+376,Shavy Babicka,Extremo Derecho,23,Gabón,2023/2024,2024-01-18,2.75,1.0,2.75,Aris Limassol,79,Toulouse,81,Liga Chipre,81,Ligue 1,92,24,5,5,-,7.24
+377,Saba Sazonov,Central,21,Georgia,2023/2024,2023-08-31,2.75,3.0,0.917,Dinamo Moskva,79,Torino,87,Premier League Rusia,84,Serie A,97,33,1,0,-,7.75
+378,Mikkel Kaufmann,Delantero Centro,22,Dinamarca,2023/2024,2023-07-01,2.7,2.7,1.0,Kobenhavn,84,Union Berlin,87,Superliga Danesa,87,Bundesliga,98,-,-,-,-,-
+379,S. Van Der Heyden,Central,25,Bélgica,2023/2024,2023-07-18,2.7,4.0,0.675,Union Saint-Gilloise,87,Mallorca,85,Liga Belga,91,Primera División,98,45,1,2,-,8.48
+380,A. Slimane,Mediocentro,22,Túnez,2023/2024,2023-07-13,2.7,2.5,1.08,Brøndby IF,81,Sheffield United,83,Superliga Danesa,87,Premier League,100,34,3,1,-,7.27
+381,S. Mouriño,Central,21,Uruguay,2023/2024,2023-07-04,2.7,0.5,5.4,Racing Montevideo,80,Atlético,94,Torneo Intermedio Uruguay,89,Primera División,98,16,0,0,-,6.7
+382,Martin Hongla,Mediocentro Defensivo,25,Camerún,2023/2024,2024-01-12,2.7,2.8,0.964,Hellas Verona,81,Granada,80,Serie A,97,Primera División,98,17,0,0,-,6.57
+383,N. Matić,Mediocentro Defensivo,35,Serbia,2023/2024,2024-01-27,2.6,3.5,0.743,Stade Rennais,88,Olympique Lyonnais,86,Ligue 1,92,Ligue 1,92,19,0,2,-,6.56
+384,Aliou Balde,Extremo Izquierdo,20,Guinea,2023/2024,2023-09-01,2.5,0.8,3.125,Lausanne Sports,73,Nice,86,Liga Suiza,89,Ligue 1,92,14,5,4,-,6.83
+385,F. Missori,Lateral Derecho,19,Italia,2023/2024,2023-07-01,2.5,0.8,3.125,Roma Sub 19,41,Sassuolo,84,Campionato Primavera 1,2,Serie A,97,24,1,4,-,7.23
+386,R. Kouamé,Mediocentro,26,Mali,2023/2024,2023-09-01,2.5,4.5,0.556,Troyes,66,Cádiz,82,Ligue 2,78,Primera División,98,32,1,1,-,7.67
+387,Nikola Moro,Mediocentro Defensivo,25,Croacia,2023/2024,2023-07-02,2.5,6.5,0.385,Dinamo Moskva,79,Bologna,88,Premier League Rusia,84,Serie A,97,6,0,2,-,6.25
+388,Julian Chabot,Central,25,Alemania,2023/2024,2023-07-01,2.5,5.5,0.455,Sampdoria,76,Köln,84,Serie A,97,Bundesliga,98,-,-,-,-,-
+389,R. Tavares,Central,21,Portugal,2023/2024,2024-01-31,2.5,0.7,3.571,Arouca,78,Lille,89,Liga Portuguesa,86,Ligue 1,92,14,0,0,-,6.53
+390,Florian Lejeune,Central,32,Francia,2023/2024,2023-07-28,2.5,4.0,0.625,Deportivo Alavés,83,Rayo Vallecano,84,Primera División,98,Primera División,98,-,-,-,-,-
+391,Manu Morlanes,Mediocentro,24,España,2023/2024,2023-07-01,2.5,4.0,0.625,Villarreal,90,Mallorca,85,Primera División,98,Primera División,98,14,0,0,-,6.7
+392,Ivo Grbić,Portero,28,Croacia,2023/2024,2024-01-26,2.5,3.5,0.714,Atlético,94,Sheffield United,83,Primera División,98,Premier League,100,-,-,-,-,-
+393,M. Aramu,Mediapunta,28,Italia,2023/2024,2023-07-01,2.5,2.2,1.136,Venezia,80,Genoa,84,Serie B,83,Serie A,97,-,-,-,-,-
+394,N. Matić,Mediocentro Defensivo,35,Serbia,2023/2024,2023-08-14,2.5,4.0,0.625,Roma,91,Stade Rennais,88,Serie A,97,Ligue 1,92,50,2,2,-,7.98
+395,S. Luperto,Central,26,Italia,2023/2024,2023-07-01,2.5,3.0,0.833,Napoli,93,Empoli,82,Serie A,97,Serie A,97,-,-,-,-,-
+396,Ramón Terrats,Mediocentro Defensivo,22,España,2023/2024,2023-07-01,2.5,4.0,0.625,Girona,89,Villarreal,90,Primera División,98,Primera División,98,10,0,0,-,5.95
+397,G. Escalante,Mediocentro,30,Argentina,2023/2024,2023-07-01,2.5,2.0,1.25,Lazio,91,Cádiz,82,Serie A,97,Primera División,98,-,-,-,-,-
+398,Amir Murillo,Lateral Derecho,27,Panamá,2023/2024,2023-08-30,2.5,3.0,0.833,Anderlecht,87,Olympique Marseille,88,Liga Belga,91,Ligue 1,92,45,6,5,-,8.63
+399,O. Diakité,Delantero Centro,19,Costa de Marfil,2023/2024,2023-07-01,2.5,1.5,1.667,Salzburg,80,Stade de Reims,81,Bundesliga Austria,89,Ligue 1,92,-,-,-,-,-
+400,D. Ankeye,Delantero Centro,21,Nigeria,2023/2024,2024-01-31,2.5,1.0,2.5,Sheriff,76,Genoa,84,Liga Moldavia,73,Serie A,97,25,8,2,-,7.03
+401,Tim Breithaupt,Mediocentro Defensivo,21,Alemania,2023/2024,2023-07-01,2.5,3.5,0.714,Karlsruher SC,77,FC Augsburg,82,2. Bundesliga,85,Bundesliga,98,24,2,1,-,7.37
+402,L. Paredes,Mediocentro Defensivo,29,Argentina,2023/2024,2023-08-16,2.5,12.0,0.208,PSG,91,Roma,91,Ligue 1,92,Serie A,97,4,0,1,-,4.93
+403,K. Van Den Kerkhof,Lateral Derecho,27,Argelia,2023/2024,2023-08-31,2.5,2.0,1.25,Bastia,66,Metz,75,Ligue 2,78,Ligue 1,92,42,5,7,-,8.44
+404,Niklas Schmidt,Mediapunta,25,Alemania,2023/2024,2023-08-04,2.5,2.5,1.0,Werder Bremen,83,Toulouse,81,Bundesliga,98,Ligue 1,92,25,3,0,-,6.78
+405,Yann Gboho,Mediapunta,22,Francia,2023/2024,2024-01-08,2.5,2.5,1.0,Cercle Brugge,83,Toulouse,81,Liga Belga,91,Ligue 1,92,21,1,3,-,7.19
+406,P. Katseris,Lateral Derecho,22,Grecia,2023/2024,2024-01-23,2.4,0.5,4.8,Catanzaro,76,Lorient,76,Serie B,83,Ligue 1,92,15,0,2,-,6.71
+407,Ashley Phillips,Central,18,Inglaterra,2023/2024,2023-08-05,2.3,2.0,1.15,Blackburn Rovers,77,Tottenham Hotspur,94,Championship,87,Premier League,100,14,0,0,-,6.19
+408,K. Davis,Delantero Centro,25,Inglaterra,2023/2024,2023-09-01,2.3,3.0,0.767,Aston Villa,92,Udinese,85,Premier League,100,Serie A,97,-,-,-,-,-
+409,Senne Lynen,Mediocentro Defensivo,24,Bélgica,2023/2024,2023-08-08,2.25,4.0,0.563,Union Saint-Gilloise,87,Werder Bremen,83,Liga Belga,91,Bundesliga,98,53,2,6,-,8.44
+410,Uroš Račić,Mediocentro Defensivo,25,Serbia,2023/2024,2023-08-16,2.2,6.5,0.338,Valencia,87,Sassuolo,84,Primera División,98,Serie A,97,-,-,-,-,-
+411,Phillip Tietz,Delantero Centro,26,Alemania,2023/2024,2023-07-12,2.2,2.7,0.815,Darmstadt 98,79,FC Augsburg,82,Bundesliga,98,Bundesliga,98,37,14,3,-,8.29
+412,Chris Bedia,Delantero Centro,27,Costa de Marfil,2023/2024,2024-01-18,2.0,3.0,0.667,Servette,83,Union Berlin,87,Liga Suiza,89,Bundesliga,98,29,16,3,-,7.62
+413,O. El Azzouzi,Mediocentro Defensivo,22,Marruecos,2023/2024,2023-07-20,2.0,0.8,2.5,Union Saint-Gilloise,87,Bologna,88,Liga Belga,91,Serie A,97,34,2,0,-,7.03
+414,Iván Martín,Mediapunta,24,España,2023/2024,2023-07-22,2.0,3.0,0.667,Villarreal,90,Girona,89,Primera División,98,Primera División,98,-,-,-,-,-
+415,J. Malatini,Central,22,Argentina,2023/2024,2024-01-16,2.0,1.7,1.176,Defensa y Justicia,86,Werder Bremen,83,Liga Profesional Argentina,94,Bundesliga,98,-,-,-,-,-
+416,F. Chiarodia,Central,18,Italia,2023/2024,2023-07-01,2.0,1.0,2.0,Werder Bremen,83,B. Mönchengladbach,88,Bundesliga,98,Bundesliga,98,4,0,0,-,4.94
+417,B. Hollerbach,Delantero Centro,22,Alemania,2023/2024,2023-07-27,2.0,1.2,1.667,Wehen Wiesbaden,72,Union Berlin,87,2. Bundesliga,85,Bundesliga,98,39,17,4,-,8.15
+418,Sergi Altimira,Mediocentro,21,España,2023/2024,2023-08-11,2.0,0.3,6.667,Getafe,86,Real Betis,90,Primera División,98,Primera División,98,-,-,-,-,-
+419,Philipp Max,Lateral Izquierdo,29,Alemania,2023/2024,2023-07-01,2.0,3.0,0.667,PSV,88,Eintracht Frankfurt,89,Eredivisie,90,Bundesliga,98,25,0,2,-,7.29
+420,K. Ouattara,Lateral Izquierdo,19,Francia,2023/2024,2023-11-01,2.0,0.6,3.333,Amiens SC,64,Monaco,88,Ligue 2,78,Ligue 1,92,12,0,0,-,6.35
+421,R. Schallenberg,Mediocentro Defensivo,24,Alemania,2023/2024,2023-07-01,2.0,3.0,0.667,Paderborn,79,Schalke 04,77,2. Bundesliga,85,Bundesliga,98,35,3,1,-,8
+422,E. Gyasi,Extremo Izquierdo,29,Ghana,2023/2024,2023-07-21,2.0,2.0,1.0,Spezia,76,Empoli,82,Serie B,83,Serie A,97,36,2,1,-,7.74
+423,C. Klarer,Central,23,Austria,2023/2024,2023-07-18,2.0,2.2,0.909,Fortuna Düsseldorf,82,Darmstadt 98,79,2. Bundesliga,85,Bundesliga,98,33,2,1,-,7.95
+424,D. Hashioka,Lateral Derecho,24,Japón,2023/2024,2024-01-30,2.0,2.0,1.0,Sint-Truidense VV,80,Luton Town,83,Liga Belga,91,Premier League,100,19,2,2,-,7.02
+425,K. Behrens,Delantero Centro,32,Alemania,2023/2024,2024-01-31,2.0,4.0,0.5,Union Berlin,87,Wolfsburg,87,Bundesliga,98,Bundesliga,98,25,4,1,-,6.99
+426,Milan Đurić,Delantero Centro,33,Bosnia-Herzegovina,2023/2024,2024-01-26,2.0,1.0,2.0,Hellas Verona,81,AC Monza,85,Serie A,97,Serie A,97,21,6,1,-,7.05
+427,T. Augello,Lateral Izquierdo,28,Italia,2023/2024,2023-07-18,2.0,2.0,1.0,Sampdoria,76,Cagliari,81,Serie B,83,Serie A,97,40,2,6,-,8.14
+428,P. Hatzidiakos,Central,26,Grecia,2023/2024,2023-09-01,2.0,4.0,0.5,AZ Alkmaar,88,Cagliari,81,Eredivisie,90,Serie A,97,52,0,6,-,8.46
+429,Lamine Diack,Mediocentro Defensivo,23,Senegal,2023/2024,2024-01-31,2.0,1.5,1.333,Ankaragücü,81,Nantes,76,Liga Turca,91,Ligue 1,92,-,-,-,-,-
+430,E. Camara,Mediocentro Defensivo,20,Francia,2023/2024,2023-07-14,2.0,0.5,4.0,Huddersfield Town,72,Udinese,85,Championship,87,Serie A,97,22,0,0,-,6.73
+431,Frank Magri,Delantero Centro,23,Camerún,2023/2024,2023-07-21,2.0,1.0,2.0,Bastia,66,Toulouse,81,Ligue 2,78,Ligue 1,92,25,13,4,-,7.55
+432,Julian Justvan,Mediapunta,25,Alemania,2023/2024,2023-07-01,2.0,1.5,1.333,Paderborn,79,Hoffenheim,86,2. Bundesliga,85,Bundesliga,98,37,7,8,-,8.14
+433,S. Walukiewicz,Central,23,Polonia,2023/2024,2023-07-01,2.0,3.0,0.667,Cagliari,81,Empoli,82,Serie B,83,Serie A,97,-,-,-,-,-
+434,S. Scuffet,Portero,27,Italia,2023/2024,2023-07-14,2.0,2.0,1.0,CFR Cluj,77,Cagliari,81,Liga Rumana,82,Serie A,97,49,-,-,46,8.6
+435,Andy Pelmard,Central,23,Francia,2023/2024,2023-07-12,1.9,4.3,0.442,Basel,83,Clermont,75,Liga Suiza,89,Ligue 1,92,58,0,2,-,8.16
+436,Yayah Kallon,Extremo Derecho,22,Sierra Leona,2023/2024,2023-07-01,1.8,1.5,1.2,Genoa,84,Hellas Verona,81,Serie B,83,Serie A,97,-,-,-,-,-
+437,Fraser Hornby,Delantero Centro,23,Escocia,2023/2024,2023-07-05,1.8,1.0,1.8,Stade de Reims,81,Darmstadt 98,79,Ligue 1,92,Bundesliga,98,-,-,-,-,-
+438,Marvin Pieringer,Delantero Centro,23,Alemania,2023/2024,2023-07-03,1.8,2.0,0.9,Schalke 04,77,Heidenheim,82,2. Bundesliga,85,Bundesliga,98,-,-,-,-,-
+439,B. Tetteh,Delantero Centro,26,Ghana,2023/2024,2023-08-10,1.8,1.5,1.2,Hull City,75,Metz,75,Championship,87,Ligue 1,92,17,1,3,-,6.28
+440,Gonzalo Villar,Mediocentro,25,España,2023/2024,2023-08-04,1.8,2.8,0.643,Roma,91,Granada,80,Serie A,97,Primera División,98,-,-,-,-,-
+441,C. Ikwuemesi,Delantero Centro,22,Nigeria,2023/2024,2023-08-18,1.8,0.5,3.6,Celje,76,Salernitana,77,Liga Eslovena SNL,80,Serie A,97,32,9,5,-,7.99
+442,Andrew Irving,Mediocentro,23,Escocia,2023/2024,2023-08-31,1.76,0.8,2.2,Austria Klagenfurt,80,West Ham,92,Bundesliga Austria,89,Premier League,100,34,6,7,-,7.84
+443,Facu González,Central,20,Uruguay,2023/2024,2023-08-08,1.75,1.0,1.75,Valencia Mestalla,50,Juventus,95,Segunda Federación,56,Serie A,97,17,1,0,-,7.03
+444,N. Radonjić,Extremo Izquierdo,27,Serbia,2023/2024,2023-07-01,1.7,4.0,0.425,Olympique Marseille,88,Torino,87,Ligue 1,92,Serie A,97,-,-,-,-,-
+445,M. Pongračić,Central,25,Croacia,2023/2024,2023-07-01,1.6,4.0,0.4,Wolfsburg,87,Lecce,81,Bundesliga,98,Serie A,97,-,-,-,-,-
+446,Kauã Santos,Portero,20,Brasil,2023/2024,2023-08-29,1.6,0.4,4.0,Flamengo SP Sub 20,8,Eintracht Frankfurt,89,-,-,Bundesliga,98,-,-,-,-,-
+447,Joe Gauci,Portero,23,Australia,2023/2024,2024-02-01,1.5,0.55,2.727,Adelaide United,67,Aston Villa,92,Liga Australiana,77,Premier League,100,10,-,-,17,6.94
+448,Portu,Extremo Derecho,31,España,2023/2024,2023-09-01,1.5,3.5,0.429,Getafe,86,Girona,89,Primera División,98,Primera División,98,37,0,4,-,7.35
+449,Rubén Blanco,Portero,28,España,2023/2024,2023-07-30,1.5,4.0,0.375,Celta,85,Olympique Marseille,88,Primera División,98,Ligue 1,92,-,-,-,-,-
+450,R. N'diaye,Mediocentro,21,Senegal,2023/2024,2023-07-17,1.5,4.0,0.375,Sochaux,67,Le Havre,75,Ligue 2,78,Ligue 1,92,33,1,1,-,7.74
+451,Florian Müller,Portero,25,Alemania,2023/2024,2023-07-01,1.5,1.5,1.0,Stuttgart,90,SC Freiburg,89,Bundesliga,98,Bundesliga,98,22,-,-,36,7.4
+452,Mihailo Ristić,Lateral Izquierdo,27,Serbia,2023/2024,2023-09-01,1.5,3.0,0.5,Benfica,88,Celta,85,Liga Portuguesa,86,Primera División,98,10,1,1,-,6.05
+453,Nikola Maraš,Central,27,Serbia,2023/2024,2023-07-01,1.5,1.2,1.25,Almería,79,Deportivo Alavés,83,Primera División,98,Primera División,98,-,-,-,-,-
+454,S. Kaba,Delantero Centro,28,Guinea,2023/2024,2023-08-17,1.5,2.8,0.536,Midtjylland,84,Las Palmas,81,Superliga Danesa,87,Primera División,98,27,4,4,-,6.96
+455,Junior Messias,Extremo Derecho,32,Brasil,2023/2024,2024-01-13,1.5,3.0,0.5,Milan,93,Genoa,84,Serie A,97,Serie A,97,-,-,-,-,-
+456,T. Corbeanu,Extremo Derecho,21,Canadá,2023/2024,2024-02-01,1.5,1.7,0.882,Wolves Sub 21,50,Granada,80,Premier League 2 Division One,2,Primera División,98,-,-,-,-,-
+457,Dani Silva,Mediocentro,23,Portugal,2023/2024,2024-01-25,1.5,2.0,0.75,Vitória Guimarães,81,Hellas Verona,81,Liga Portuguesa,86,Serie A,97,22,1,3,-,6.96
+458,A. Gorosabel,Lateral Derecho,27,España,2023/2024,2023-08-11,1.5,9.0,0.167,Real Sociedad,92,Deportivo Alavés,83,Primera División,98,Primera División,98,35,0,0,-,7.56
+459,R. Marchizza,Lateral Izquierdo,25,Italia,2023/2024,2023-07-13,1.3,1.0,1.3,Sassuolo,84,Frosinone,83,Serie A,97,Serie A,97,10,0,1,-,6.16
+460,Falaye Sacko,Lateral Derecho,28,Mali,2023/2024,2023-07-01,1.3,4.0,0.325,Vitória Guimarães,81,Montpellier,80,Liga Portuguesa,86,Ligue 1,92,-,-,-,-,-
+461,S. Mitrović,Extremo Izquierdo,21,Serbia,2023/2024,2024-02-01,1.3,3.0,0.433,Crvena Zvezda,82,Hellas Verona,81,Liga Serbia,80,Serie A,97,13,1,0,-,6.9
+462,Dani Cárdenas,Portero,26,España,2023/2024,2023-08-18,1.3,2.0,0.65,Levante,82,Rayo Vallecano,84,Segunda División,85,Primera División,98,34,-,-,23,8.03
+463,C. Mandas,Portero,21,Grecia,2023/2024,2023-09-01,1.3,1.0,1.3,OFI,66,Lazio,91,Super League Griega,82,Serie A,97,26,-,-,31,7.52
+464,Joel Asoro,Extremo Derecho,24,Suecia,2023/2024,2023-08-24,1.2,1.5,0.8,Djurgårdens IF,81,Metz,75,Liga Sueca,88,Ligue 1,92,36,11,4,-,7.84
+465,S. Pierotti,Extremo Derecho,22,Argentina,2023/2024,2024-01-16,1.2,2.5,0.48,Colón,84,Lecce,81,Primera Nacional,80,Serie A,97,-,-,-,-,-
+466,Habib Keita,Mediocentro,21,Mali,2023/2024,2023-07-04,1.2,0.65,1.846,Olympique Lyonnais,86,Clermont,75,Ligue 1,92,Ligue 1,92,-,-,-,-,-
+467,Y. Ramadani,Mediocentro Defensivo,27,Albania,2023/2024,2023-08-04,1.2,0.8,1.5,Aberdeen,77,Lecce,81,Liga Escocia,85,Serie A,97,44,1,4,-,8.37
+468,Rob Holding,Central,27,Inglaterra,2023/2024,2023-09-01,1.2,8.0,0.15,Arsenal,97,Crystal Palace,88,Premier League,100,Premier League,100,23,2,0,-,7.03
+469,J. Milosevic,Delantero Centro,17,Serbia,2023/2024,2023-07-01,1.2,0.5,2.4,FK Vojvodina,79,Stuttgart,90,Liga Serbia,80,Bundesliga,98,20,4,0,-,6.73
+470,Thomas Holmes,Central,23,Inglaterra,2023/2024,2024-01-17,1.17,3.5,0.334,Reading,70,Luton Town,83,League One,78,Premier League,100,16,0,0,-,6.6
+471,M. Kwarteng,Mediapunta,25,Alemania,2023/2024,2023-07-01,1.1,1.5,0.733,Magdeburg,74,VfL Bochum,82,2. Bundesliga,85,Bundesliga,98,30,10,2,-,7.95
+472,Robin Hack,Extremo Izquierdo,24,Alemania,2023/2024,2023-07-01,1.1,3.0,0.367,Arminia Bielefeld,68,B. Mönchengladbach,88,2. Bundesliga,85,Bundesliga,98,37,11,8,-,7.9
+473,N. Tenaglia,Lateral Derecho,27,Argentina,2023/2024,2023-08-20,1.0,3.0,0.333,Talleres Córdoba,86,Deportivo Alavés,83,Liga Profesional Argentina,94,Primera División,98,-,-,-,-,-
+474,Sergi Guardiola,Delantero Centro,32,España,2023/2024,2023-07-01,1.0,2.0,0.5,Real Valladolid,82,Cádiz,82,Primera División,98,Primera División,98,15,0,0,-,6.05
+475,C. Lenz,Lateral Izquierdo,28,Alemania,2023/2024,2023-08-30,1.0,2.5,0.4,Eintracht Frankfurt,89,RB Leipzig,96,Bundesliga,98,Bundesliga,98,34,0,2,-,7.32
+476,G. Faticanti,Mediocentro Defensivo,19,Italia,2023/2024,2023-08-25,1.0,0.8,1.25,Roma Sub 19,41,Lecce,81,Campionato Primavera 1,2,Serie A,97,29,2,2,-,7.32
+477,E. Sabbi,Extremo Derecho,25,Estados Unidos,2023/2024,2023-08-10,1.0,0.6,1.667,Odense BK,73,Le Havre,75,Superliga Danesa,87,Ligue 1,92,19,8,4,-,7.14
+478,Remi Oudin,Mediapunta,26,Francia,2023/2024,2023-08-28,1.0,4.0,0.25,Girondins Bordeaux,70,Lecce,81,Ligue 2,78,Serie A,97,-,-,-,-,-
+479,F. Muslija,Extremo Izquierdo,25,Kosovo,2023/2024,2024-01-24,1.0,2.5,0.4,Paderborn,79,SC Freiburg,89,2. Bundesliga,85,Bundesliga,98,19,9,6,-,7.46
+480,N. Amiri,Mediocentro,27,Alemania,2023/2024,2024-01-31,1.0,4.0,0.25,B. Leverkusen,95,Mainz 05,85,Bundesliga,98,Bundesliga,98,9,0,1,-,4.89
+481,P. Mwene,Lateral Izquierdo,29,Austria,2023/2024,2023-08-23,1.0,3.0,0.333,PSV,88,Mainz 05,85,Eredivisie,90,Bundesliga,98,38,0,2,-,7.73
+482,C. Cásseres,Mediocentro,23,Venezuela,2023/2024,2023-07-07,1.0,3.5,0.286,New York RB,84,Toulouse,81,MLS - Liga USA,92,Ligue 1,92,19,1,1,-,6.71
+483,Nnamdi Collins,Central,19,Alemania,2023/2024,2023-08-09,1.0,0.75,1.333,B. Dortmund II,67,Eintracht Frankfurt,89,3. Liga,75,Bundesliga,98,8,0,0,-,5.42
+484,Jake O'brien,Central,22,Irlanda,2023/2024,2023-08-15,1.0,0.7,1.429,Crystal Palace Sub 21,50,Olympique Lyonnais,86,Premier League 2 Division One,2,Ligue 1,92,2,0,0,-,6.48
+485,Jayden Braaf,Extremo Izquierdo,20,Países Bajos,2023/2024,2023-07-02,1.0,1.0,1.0,B. Dortmund II,67,Hellas Verona,81,3. Liga,75,Serie A,97,7,0,0,-,4.99
+486,Tomáš Suslov,Mediapunta,21,Eslovaquia,2023/2024,2024-01-31,1.0,2.0,0.5,Groningen,74,Hellas Verona,81,Eerste Divisie,74,Serie A,97,2,1,0,-,6.41
+487,Sven Michel,Delantero Centro,32,Alemania,2023/2024,2023-07-01,0.95,0.9,1.056,Union Berlin,87,FC Augsburg,82,Bundesliga,98,Bundesliga,98,29,6,1,-,6.53
+488,Steven Benda,Portero,24,Alemania,2023/2024,2023-08-30,0.87,0.4,2.175,Swansea City,77,Fulham,89,Championship,87,Premier League,100,23,-,-,30,7.43
+489,H. Moldovan,Portero,26,Rumanía,2023/2024,2024-01-24,0.8,2.6,0.308,FC Rapid Bucuresti,77,Atlético,94,Liga Rumana,82,Primera División,98,23,-,-,25,7.57
+490,Hamza Rafia,Mediocentro,24,Túnez,2023/2024,2023-07-18,0.8,0.6,1.333,Pescara,59,Lecce,81,Serie C,65,Serie A,97,18,1,10,-,6.96
+491,Paul Seguin,Mediocentro,28,Alemania,2023/2024,2023-07-01,0.75,2.5,0.3,Union Berlin,87,Schalke 04,77,Bundesliga,98,Bundesliga,98,23,1,3,-,6.64
+492,M. Wittek,Lateral Izquierdo,27,Alemania,2023/2024,2023-08-14,0.75,2.0,0.375,Vitesse,75,VfL Bochum,82,Eredivisie,90,Bundesliga,98,31,3,7,-,8.01
+493,Abdou Harroui,Mediocentro,25,Marruecos,2023/2024,2023-07-13,0.7,2.7,0.259,Sassuolo,84,Frosinone,83,Serie A,97,Serie A,97,24,2,0,-,6.43
+494,A. Tikvić,Central,19,Croacia,2023/2024,2023-09-01,0.65,0.15,4.333,Bayern München II,57,Udinese,85,Regionalliga,60,Serie A,97,14,1,0,-,6.5
+495,N. El Aynaoui,Mediocentro,21,Marruecos,2023/2024,2023-07-01,0.6,0.7,0.857,Nancy,60,Lens,87,National,70,Ligue 1,92,33,4,0,-,7.91
+496,Omar Mascarell,Mediocentro Defensivo,30,Guinea Ecuatorial,2023/2024,2023-07-01,0.6,3.0,0.2,Elche,79,Mallorca,85,Segunda División,85,Primera División,98,30,0,1,-,7.56
+497,Bernardo,Lateral Izquierdo,28,Brasil,2023/2024,2023-08-02,0.6,2.5,0.24,Salzburg,80,VfL Bochum,82,Bundesliga Austria,89,Bundesliga,98,27,0,0,-,7.39
+498,Carlos Vicente,Extremo Derecho,24,España,2023/2024,2024-01-01,0.6,1.2,0.5,Racing Ferrol,74,Deportivo Alavés,83,Segunda División,85,Primera División,98,23,4,4,-,7.71
+499,M. Mittelstädt,Lateral Izquierdo,26,Alemania,2023/2024,2023-07-01,0.5,2.0,0.25,Hertha BSC,80,Stuttgart,90,Bundesliga,98,Bundesliga,98,17,0,0,-,6.06
+500,R. Belahyane,Mediocentro Defensivo,19,Francia,2023/2024,2024-01-25,0.5,0.2,2.5,Nice,86,Hellas Verona,81,Ligue 1,92,Serie A,97,2,0,0,-,5.11
+501,A. Candreva,Carrilero Derecho,36,Italia,2023/2024,2023-07-01,0.5,1.5,0.333,Sampdoria,76,Salernitana,77,Serie A,97,Serie A,97,1,0,0,-,5.69
+502,E. Tavşan,Extremo Derecho,22,Países Bajos,2023/2024,2024-01-23,0.5,1.0,0.5,NEC Nijmegen,81,Hellas Verona,81,Eredivisie,90,Serie A,97,10,3,3,-,6.69
+503,B. Locko,Lateral Izquierdo,21,Francia,2023/2024,2023-07-27,0.5,2.5,0.2,Stade de Reims,81,Stade Brestois,82,Ligue 1,92,Ligue 1,92,17,0,0,-,6.67
+504,Andrei Rațiu,Lateral Derecho,25,Rumanía,2023/2024,2023-08-26,0.5,1.5,0.333,Huesca,75,Rayo Vallecano,84,Segunda División,85,Primera División,98,39,2,5,-,8.01
+505,S. Goglichidze,Central,19,Georgia,2023/2024,2024-01-06,0.45,0.3,1.5,Torpedo Kutaisi,75,Empoli,82,Liga Georgia,79,Serie A,97,-,-,-,-,-
+506,Matej Maglica,Central,24,Croacia,2023/2024,2023-07-01,0.45,1.0,0.45,St. Gallen,81,Stuttgart,90,Liga Suiza,89,Bundesliga,98,34,2,0,-,7.81
+507,Issa Soumaré,Extremo Izquierdo,22,Senegal,2023/2024,2023-07-04,0.4,1.0,0.4,Beerschot VA,74,Le Havre,75,Segunda División Bélgica,78,Ligue 1,92,-,-,-,-,-
+508,S. Elisor,Delantero Centro,23,Francia,2023/2024,2023-07-05,0.4,0.8,0.5,RFC Seraing,59,Metz,75,Segunda División Bélgica,78,Ligue 1,92,15,1,0,-,5.98
+509,Aarón Escandell,Portero,27,España,2023/2024,2023-07-24,0.4,1.0,0.4,FC Cartagena,71,Las Palmas,81,Segunda División,85,Primera División,98,36,-,-,37,7.96
+510,M. Gersbeck,Portero,28,Alemania,2023/2024,2023-07-01,0.3,0.8,0.375,Karlsruher SC,77,Hertha BSC,80,2. Bundesliga,85,Bundesliga,98,32,-,-,44,7.96
+511,F. Ghedjemis,Extremo Derecho,21,Francia,2023/2024,2024-01-02,0.3,0.6,0.5,FC Rouen 1899,61,Frosinone,83,National,70,Serie A,97,17,4,2,-,7.08
+512,K. Haveri,Lateral Izquierdo,21,Albania,2023/2024,2023-07-03,0.3,0.3,1.0,Rimini,54,Torino,87,Serie C,65,Serie A,97,24,0,0,-,6.88
+513,Franz Stolz,Portero,22,Austria,2023/2024,2024-01-27,0.25,0.2,1.25,SKN St. Polten,69,Genoa,84,Segunda Austria,73,Serie A,97,13,-,-,16,6.96
+514,M'baye Niang,Delantero Centro,29,Senegal,2023/2024,2024-01-31,0.25,2.7,0.093,Adana Demirspor,85,Empoli,82,Liga Turca,91,Serie A,97,20,8,2,-,7.07
+515,Sergi Canós,Extremo Derecho,26,España,2023/2024,2023-08-20,0.25,9.0,0.028,Brentford,90,Valencia,87,Premier League,100,Primera División,98,6,0,0,-,4.57
+516,T. Pasalidis,Central,27,Grecia,2023/2024,2024-01-31,0.25,0.5,0.5,OFI,66,Salernitana,77,Super League Griega,82,Serie A,97,13,0,0,-,6.56
+517,Patrick Dorgu,Lateral Izquierdo,18,Dinamarca,2023/2024,2023-07-01,0.2,0.4,0.5,Nordsjælland Sub 19,36,Lecce,81,Liga Danesa Sub 19,1,Serie A,97,-,-,-,-,-
+518,V. Mannone,Portero,35,Italia,2023/2024,2023-08-29,0.2,0.3,0.667,Lorient,76,Lille,89,Ligue 1,92,Ligue 1,92,20,-,-,26,7.39
+519,Samuele Angori,Lateral Izquierdo,19,Italia,2023/2024,2023-07-17,0.2,0.2,1.0,Perugia,69,Empoli,82,Serie C,65,Serie A,97,1,0,0,-,4.51
+520,B. Dizdarevic,Portero,21,Bosnia-Herzegovina,2023/2024,2023-07-07,0.15,0.2,0.75,Sarajevo,76,Montpellier,80,Liga Bosnia-Herzegovina,78,Ligue 1,92,16,-,-,23,6.92
+521,Marc Martínez,Portero,33,España,2023/2024,2024-01-28,0.15,0.4,0.375,FC Cartagena,71,Granada,80,Segunda División,85,Primera División,98,21,-,-,30,7.28
+522,A. Khusanov,Central,19,Uzbekistán,2023/2024,2023-07-24,0.1,0.4,0.25,Energetik-BGU,59,Lens,87,Liga Bielorrusia,80,Ligue 1,92,10,1,0,-,6.6
+523,D. Sommariva,Portero,25,Italia,2023/2024,2023-07-05,0.1,0.1,1.0,Pescara,59,Genoa,84,Serie C,65,Serie A,97,11,-,-,13,6.48
+524,S. Romagnoli,Central,33,Italia,2023/2024,2023-07-25,0.1,0.75,0.133,Lecce,81,Frosinone,83,Serie A,97,Serie A,97,7,0,0,-,4.85

@@ -1,7 +1,10 @@
 import streamlit as st
 import pandas as pd
 import io
-from funciones import upload_to_gcs, transform_dataframe
+from funciones import upload_to_gcs, transform_dataframe, get_player_images
+
+#Ruta a imagenes de jugadores
+players_csv = 'D:\Dropbox\Facu\EDEM\GitHub\GitHub_Repositorios\TFM_VCF\streamlit\img_players.csv'
 
 # Interfaz de Streamlit
 st.markdown(
@@ -36,6 +39,9 @@ if uploaded_file is not None:
         
         # Transformar el DataFrame
         df_transformed = transform_dataframe(df)
+        
+        # Obtener URLs de imágenes de jugadores y agregar al DataFrame
+        df_with_images = get_player_images(df_transformed, players_csv)
 
         if df_transformed is not None:
             st.write("Transformed DataFrame:")

@@ -13,13 +13,6 @@ st.set_page_config(
 # Ruta a imágenes de jugadores
 players_csv = 'D:/Dropbox/Facu/EDEM/GitHub/GitHub_Repositorios/TFM_VCF/streamlit/img_players.csv'
 
-# Crear dos columnas
-col1, col2 = st.columns([1, 1])  # Puedes ajustar los números para cambiar el tamaño de las columnas
-
-with col1:
-    st.header("Uploaded Data")
-    st.divider()
-
 # Sidebar
 with st.sidebar:
     # Logo centrado en el sidebar
@@ -66,6 +59,71 @@ if uploaded_file is not None:
         columns_order = ['img_player'] + [col for col in df_with_images.columns if col != 'img_player']
         df_with_images = df_with_images[columns_order]
 
+        # Mostrar los filtros en la parte superior
+        st.subheader("Slicer")
+        filter_col1, filter_col2, filter_col3 = st.columns([1, 1, 1])  # Ajusta el ancho de las columnas si es necesario
+
+        with filter_col1:
+            jugadores = st.selectbox("Selecciona un jugador", options=["Todos"] + list(df_with_images['jugador'].unique()))
+        with filter_col2:
+            posiciones = st.selectbox("Selecciona una posición", options=["Todas"] + list(df_with_images['posicion'].unique()))
+        with filter_col3:
+            nacionalidades = st.selectbox("Selecciona una nacionalidad", options=["Todas"] + list(df_with_images['nacionalidad'].unique()))
+
+        # Aplicar los filtros
+        if jugadores != "Todos":
+            df_with_images = df_with_images[df_with_images['jugador'] == jugadores]
+        if posiciones != "Todas":
+            df_with_images = df_with_images[df_with_images['posicion'] == posiciones]
+        if nacionalidades != "Todas":
+            df_with_images = df_with_images[df_with_images['nacionalidad'] == nacionalidades]
+
+        # Calcular las métricas
+        avg_assists = df_with_images['asistencias'].mean()
+        avg_goals = df_with_images['goles'].mean()
+        avg_matches = df_with_images['partidos'].mean()
+        avg_age = df_with_images['edad'].mean()
+        
+        st.divider()
+    
+
+        # Mostrar el DataFrame transformado en la columna izquierda
+        col1, col2 = st.columns([1, 1])
+        
+        with col1:
+            # Mostrar el subheader antes del DataFrame
+            st.subheader("Preview")
+            st.data_editor(
+                df_with_images,
+                column_config={
+                    "img_player": st.column_config.ImageColumn(
+                        "Image_player", help="Streamlit app preview screenshots"
+                    )
+                },
+                hide_index=True,
+            )
+
+        # Mostrar las métricas en la columna derecha
+        with col2:
+            st.subheader("Metrics")
+
+            # Fila superior de métricas
+            col2_metric1, col2_metric2 = st.columns(2)
+            with col2_metric1:
+                st.metric(label="Promedio Asistencias", value=f"{avg_assists:.2f}")
+            with col2_metric2:
+                st.metric(label="Promedio Goles", value=f"{avg_goals:.2f}")
+
+            # Espacio entre las métricas
+            st.divider()
+
+            # Fila inferior de métricas
+            col2_metric3, col2_metric4 = st.columns(2)
+            with col2_metric3:
+                st.metric(label="Promedio Partidos", value=f"{avg_matches:.2f}")
+            with col2_metric4:
+                st.metric(label="Promedio Edad", value=f"{avg_age:.2f}")
+
         # Acción del botón de carga
         if upload_button:
             try:
@@ -79,26 +137,9 @@ if uploaded_file is not None:
                 # Mostrar mensaje de éxito en el sidebar
                 status_placeholder.success(f'File uploaded to tfm_vcf_bucket/{file_name}')
                 
-                # Mostrar el DataFrame transformado en la columna izquierda
-                with col1:
-                    st.data_editor(
-                        df_with_images,
-                        column_config={
-                            "img_player": st.column_config.ImageColumn(
-                                "Image_player", help="Streamlit app preview screenshots"
-                            )
-                        },
-                        hide_index=True,
-                    )
-                
             except Exception as e:
                 # Mostrar error en el sidebar
                 status_placeholder.error(f'Error al subir el archivo a GCS: {e}')
     except Exception as e:
         # Mostrar error en el sidebar
         status_placeholder.error(f'Error al leer el archivo CSV: {e}')
-
-# Mensaje en la columna derecha (por ahora solo un encabezado)
-with col2:
-    st.header("Metrics")
-    st.divider()

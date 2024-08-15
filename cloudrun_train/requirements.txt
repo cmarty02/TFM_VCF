@@ -1,0 +1,7 @@
+Flask
+pandas
+google-cloud-bigquery
+google-auth
+scikit-learn
+google-cloud-bigquery-storage
+db-dtypes

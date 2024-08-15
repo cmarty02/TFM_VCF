@@ -20,14 +20,19 @@ Este proyecto es parte de un Trabajo de Fin de Máster (TFM) y consiste en una p
 https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af
 
 
-# Deploy_CloudRun - comandos sdk
+# Setup subscripcion canal de pubsub y actuvacion de clud run y bucket
 
 -creacion de subscripcion del bucket para con el canal de pubsub:
 
 cloudrun_load>gcloud pubsub subscriptions modify-push-config eventarc-us-central1-trigger-bsyn7wmz-sub-326 --push-endpoint=https://cloud-run-load-osmqjiapya-uc.a.run.app/ --push-auth-service-account=161031452234-compute@developer.gserviceaccount.com
 Updated subscription [projects/tfm-vcf/subscriptions/eventarc-us-central1-trigger-bsyn7wmz-sub-326].
 
--construir imagen docker 
+
+# Deploy_CloudRun - comandos sdk
+
+gcloud auth login
+
+gcloud config set project tfm-vcf
 
 gcloud builds submit --tag gcr.io/tfm-vcf/cloud-run-load
 

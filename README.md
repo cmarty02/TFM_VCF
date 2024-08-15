@@ -20,23 +20,21 @@ Este proyecto es parte de un Trabajo de Fin de Máster (TFM) y consiste en una p
 https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af
 
 
+# Levantar App
+streamlit run app.py
+
 # Setup subscripcion canal de pubsub y actuvacion de clud run y bucket
-
--creacion de subscripcion del bucket para con el canal de pubsub:
-
-cloudrun_load>gcloud pubsub subscriptions modify-push-config eventarc-us-central1-trigger-bsyn7wmz-sub-326 --push-endpoint=https://cloud-run-load-osmqjiapya-uc.a.run.app/ --push-auth-service-account=161031452234-compute@developer.gserviceaccount.com
+-cloudrun_load>gcloud pubsub subscriptions modify-push-config eventarc-us-central1-trigger-bsyn7wmz-sub-326 --push-endpoint=https://cloud-run-load-osmqjiapya-uc.a.run.app/ --push-auth-service-account=161031452234-compute@developer.gserviceaccount.com
 Updated subscription [projects/tfm-vcf/subscriptions/eventarc-us-central1-trigger-bsyn7wmz-sub-326].
 
 
 # Deploy_CloudRun - comandos sdk
 
-gcloud auth login
+- gcloud auth login
 
-gcloud config set project tfm-vcf
+- gcloud config set project tfm-vcf
 
-gcloud builds submit --tag gcr.io/tfm-vcf/cloud-run-load
+- gcloud builds submit --tag gcr.io/tfm-vcf/cloud-run-train
 
-- deploy de imagen docker en cloudrun:
-  
-- gcloud run deploy cloud-run-load --image gcr.io/tfm-vcf/cloud-run-load --platform managed --region us-central1 --allow-unauthenticated
+- gcloud run deploy cloud-run-load --image gcr.io/tfm-vcf/cloud-run-train --platform managed --region us-central1 --allow-unauthenticated
 Deploying container to Cloud Run service [cloud-run-load] in project [tfm-vcf] region [us-central1]

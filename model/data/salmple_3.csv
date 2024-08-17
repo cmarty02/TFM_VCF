@@ -1,0 +1,8 @@
+',Jugador,Posición,Edad,Nacionalidad,Temporada,Fecha,Coste,VM (TM),C/VM,Equipo origen,Elo (EO),Equipo destino,Elo (ED),Competición origen,Elo (CO),Competición destino,Elo (CD),Partidos,Goles,Asistencias,Goles Concedidos,RDT
+0,Lionel Messi,Mediocentro Defensivo,24,Argentina,2023/2024,2023-07-15,116.6,90.0,1.296,Barcelona,92,Real Madrid,97,La Liga,100,La Liga,100,50,5,3,-,8.34
+1,Paul Pogba,Mediocentro Defensivo,21,Francia,2023/2024,2023-08-14,116.0,75.0,1.547,Juventus,92,Manchester United,94,Serie A,100,Premier League,100,43,1,1,-,8.49
+2,Neymar,Mediapunta,20,Brasil,2023/2024,2023-07-01,103.0,120.0,0.858,Barcelona,95,Paris Saint-Germain,99,La Liga,98,Ligue 1,98,42,14,6,-,8.7
+3,Cristiano Ronaldo,Delantero Centro,30,Portugal,2023/2024,2023-08-12,95.0,90.0,1.056,Real Madrid,94,Bayern München,99,La Liga,100,Bundesliga,98,49,32,5,-,8.91
+4,Robert Lewandowski,Delantero Centro,24,Polonia,2023/2024,2023-09-01,95.0,80.0,1.188,Bayern München,89,Paris Saint-Germain,91,Bundesliga,98,Ligue 1,92,46,23,14,-,8.83
+5,Gareth Bale,Lateral Izquierdo,21,Gales,2023/2024,2023-08-05,90.0,75.0,1.2,Real Madrid,96,Manchester City,100,La Liga,98,Premier League,100,41,3,0,-,8.39
+6,Sergio Agüero,Mediapunta,24,Argentina,2023/2024,2023-07-01,75.0,55.0,1.364,Manchester City,94,Arsenal,97,Premier League,100,Premier League,100,47,9,1,-,8.14

@@ -3,6 +3,7 @@ import pandas as pd
 import io
 from funciones import upload_to_gcs, transform_dataframe, get_player_images
 import requests
+import time  # Importar time para simular el progreso
 
 # Configuración de la página
 st.set_page_config(
@@ -42,6 +43,9 @@ with st.sidebar:
     uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
     upload_button = st.button('Upload')
     run_button = st.button('Run Predictions')
+    
+    # Agregar barra de progreso en la barra lateral
+    progress_bar = st.progress(0)  # Inicializar la barra de progreso
 
 # Placeholder for messages in the sidebar
 status_placeholder = st.sidebar.empty()
@@ -67,6 +71,7 @@ if uploaded_file is not None:
         if upload_button:
             # Acción del botón de carga
             try:
+                progress_bar.progress(25)  # Actualizar la barra de progreso al 25%
                 # Guardar el DataFrame transformado en un buffer de memoria y subirlo a GCS
                 buffer = io.StringIO()
                 df_transformed.to_csv(buffer, index=False)
@@ -80,13 +85,18 @@ if uploaded_file is not None:
                 show_content = True
                 st.session_state.show_content = True
                 
+                # Finalizar la barra de progreso
+                progress_bar.progress(100)
+                
             except Exception as e:
                 # Mostrar error en el sidebar
                 status_placeholder.error(f'Error al subir el archivo a GCS: {e}')
+                progress_bar.progress(0)
     
     except Exception as e:
         # Mostrar error en el sidebar
         status_placeholder.error(f'Error al leer el archivo CSV: {e}')
+        progress_bar.progress(0)
 
 if show_content:
     # Mostrar el DataFrame transformado en la columna izquierda
@@ -135,6 +145,7 @@ if show_content:
 if run_button and show_content:
     try:
         # Llamar al servicio de Cloud Run
+        progress_bar.progress(50)  # Actualizar la barra de progreso al 50%
         url = 'https://cloud-run-train-osmqjiapya-uc.a.run.app/predict'
         response = requests.get(url)
         
@@ -154,7 +165,11 @@ if run_button and show_content:
                 },
                 hide_index=True,
             )
+            # Finalizar la barra de progreso
+            progress_bar.progress(100)
         else:
             st.error(f'Error {response.status_code}: {response.text}')
+            progress_bar.progress(0)
     except Exception as e:
         st.error(f'Error al realizar la predicción: {e}')
+        progress_bar.progress(0)

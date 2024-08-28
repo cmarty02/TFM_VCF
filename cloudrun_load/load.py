@@ -17,7 +17,7 @@ logging.basicConfig(level=logging.INFO)
 # Configurar valores específicos
 BUCKET_NAME = 'tfm_vcf_bucket'  # Nombre del bucket
 BQ_DATASET = 'tfm_vcf_dataset'  # Nombre del dataset en BigQuery
-BQ_TABLE = 'tfm_vcf_table'      # Nombre de la tabla en BigQuery
+BQ_TABLE = 'tfm_vcf_table1'      # Nombre de la tabla en BigQuery
 PROJECT_ID = 'tfm-vcf'          # ID del proyecto
 
 # Verificar que los valores están configurados correctamente

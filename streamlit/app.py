@@ -40,7 +40,7 @@ with st.sidebar:
     st.header("VCF Forecasting Scouting Model")
     st.divider()
     st.subheader("Settings")
-    uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
+    uploaded_file = st.file_uploader("Choose a xlsx file", type="xlsx")
     upload_button = st.button('Upload')
     run_button = st.button('Run Predictions')
     
@@ -56,7 +56,7 @@ show_content = st.session_state.get('show_content', False)
 if uploaded_file is not None:
     try:
         # Leer el archivo CSV
-        df = pd.read_csv(uploaded_file)
+        df = pd.read_excel(uploaded_file)
         
         # Transformar el DataFrame
         df_transformed = transform_dataframe(df)
@@ -76,7 +76,7 @@ if uploaded_file is not None:
                 buffer = io.StringIO()
                 df_transformed.to_csv(buffer, index=False)
                 buffer.seek(0)
-                file_name = uploaded_file.name
+                file_name = uploaded_file.name.replace('.xlsx', '.csv')
                 upload_to_gcs('tfm_vcf_bucket', file_name, io.BytesIO(buffer.getvalue().encode('utf-8')))
                 
                 # Mostrar mensaje de éxito en el sidebar

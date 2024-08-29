@@ -14,7 +14,7 @@ logging.basicConfig(level=logging.INFO)
 BQ_DATASET = 'tfm_vcf_dataset'
 BQ_TABLE = 'tfm_vcf_table'
 PROJECT_ID = 'tfm-vcf'
-MODEL_PATH = 'regression_model.pkl'
+MODEL_PATH = 'random_forest_grid_search_best_setup.pkl'
 
 # Cargar el modelo una vez al inicio
 try:

@@ -29,6 +29,9 @@ def transform_dataframe(df):
     try:
         # Renombrar las columnas: quitar acentos, convertir a minúsculas y reemplazar espacios con guiones bajos
         df.columns = [unidecode.unidecode(col).lower().replace(' ', '_').replace('(', '').replace(')', '') for col in df.columns]
+        df['fecha'] = pd.to_datetime(df['fecha'], errors='coerce')
+        columnas_a_convertir = ['jugador', 'posicion', 'nacionalidad', 'temporada', 'equipo_origen', 'equipo_destino', 'competicion_origen', 'competicion_destino']
+        df[columnas_a_convertir] = df[columnas_a_convertir].astype('string')
 
         # Verificar columnas requeridas
         required_columns = [
@@ -43,7 +46,6 @@ def transform_dataframe(df):
         if missing_columns:
             st.error(f'Faltan las siguientes columnas en el archivo: {", ".join(missing_columns)}')
             return None
-
 
         # Eliminar la columna 'c/vm' si existe
         df.drop(columns=['c/vm'], inplace=True, errors='ignore')

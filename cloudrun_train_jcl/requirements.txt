@@ -1,0 +1,7 @@
+Flask
+google-cloud-storage
+google-cloud-bigquery
+pandas
+numpy
+scikit-learn
+joblib

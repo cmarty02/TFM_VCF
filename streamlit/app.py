@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
 import io
+from google.cloud import bigquery
+from google.oauth2 import service_account
 from funciones import upload_to_gcs, transform_dataframe, get_player_images
 import requests
 import time  # Importar time para simular el progreso
@@ -14,6 +16,15 @@ st.set_page_config(
 
 # Ruta a imágenes de jugadores
 players_csv = 'D:/Dropbox/Facu/EDEM/GitHub/GitHub_Repositorios/TFM_VCF/streamlit/img_players.csv'
+
+# Configuración de BigQuery y del modelo
+BQ_DATASET = 'tfm_vcf_dataset'
+BQ_TABLE = 'tfm_vcf_table'
+PROJECT_ID = 'tfm-vcf'
+
+# Configuración de las credenciales para BigQuery
+credentials = service_account.Credentials.from_service_account_file('tfm-vcf-1f05acc80f94.json')
+client = bigquery.Client(credentials=credentials, project=PROJECT_ID)
 
 # Sidebar
 with st.sidebar:
@@ -146,14 +157,23 @@ if run_button and show_content:
     try:
         # Llamar al servicio de Cloud Run
         progress_bar.progress(50)  # Actualizar la barra de progreso al 50%
-        url = 'https://cloud-run-train-osmqjiapya-uc.a.run.app/predict'
+        url = 'https://cloud-run-juan-3-161031452234.europe-west1.run.app'
         response = requests.get(url)
         
         if response.status_code == 200:
-            # Convertir la respuesta en DataFrame
-            json_data = response.json()
-            df_predictions = pd.json_normalize(json_data)
-            
+            # Cloud Run ejecutado exitosamente, ahora consultar BigQuery
+            progress_bar.progress(75)  # Actualizar la barra de progreso al 75%
+
+            # Consultar BigQuery
+            query = f"""
+                SELECT img_player, jugador, prediccion
+                FROM `{PROJECT_ID}.{BQ_DATASET}.{BQ_TABLE}`
+                WHERE upload_id = (
+                    SELECT MAX(upload_id) FROM `{PROJECT_ID}.{BQ_DATASET}.{BQ_TABLE}`
+                )
+                    """
+            df_predictions = client.query(query).to_dataframe()
+
             # Mostrar el DataFrame de predicciones
             st.subheader("Predictions")
             st.data_editor(

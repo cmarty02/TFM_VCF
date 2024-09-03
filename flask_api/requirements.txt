@@ -1,0 +1,6 @@
+Flask
+pandas
+joblib
+google-cloud-storage
+scikit-learn
+gunicorn

@@ -1,7 +1,8 @@
 Flask
-pandas
+google-cloud-storage
 google-cloud-bigquery
-google-auth
+pandas
+numpy
 scikit-learn
-google-cloud-bigquery-storage
-db-dtypes
+joblib
+pandas-gbq

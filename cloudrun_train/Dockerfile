@@ -7,7 +7,6 @@ WORKDIR /app
 # Copia los archivos necesarios
 COPY requirements.txt .
 COPY train.py .
-COPY random_forest_grid_search_best_setup.pkl .
 
 # Instala las dependencias
 RUN pip install --no-cache-dir -r requirements.txt

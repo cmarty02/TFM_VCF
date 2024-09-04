@@ -154,7 +154,7 @@ if show_content:
 
 if run_button and show_content:
     try:
-        # Llamar al servicio de Cloud Run
+        # Llamar a la api
         progress_bar.progress(50)  # Actualizar la barra de progreso al 50%
         url = 'https://api-161031452234.us-central1.run.app/run'
         response = requests.get(url)

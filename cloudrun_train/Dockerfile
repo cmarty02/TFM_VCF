@@ -7,7 +7,6 @@ WORKDIR /app
 # Copia los archivos necesarios
 COPY requirements.txt .
 COPY train.py .
-COPY regression_model.pkl .
 
 # Instala las dependencias
 RUN pip install --no-cache-dir -r requirements.txt

@@ -29,6 +29,9 @@ def transform_dataframe(df):
     try:
         # Renombrar las columnas: quitar acentos, convertir a minúsculas y reemplazar espacios con guiones bajos
         df.columns = [unidecode.unidecode(col).lower().replace(' ', '_').replace('(', '').replace(')', '') for col in df.columns]
+        df['fecha'] = pd.to_datetime(df['fecha'], errors='coerce')
+        columnas_a_convertir = ['jugador', 'posicion', 'nacionalidad', 'temporada', 'equipo_origen', 'equipo_destino', 'competicion_origen', 'competicion_destino']
+        df[columnas_a_convertir] = df[columnas_a_convertir].astype('string')
 
         # Verificar columnas requeridas
         required_columns = [
@@ -44,10 +47,6 @@ def transform_dataframe(df):
             st.error(f'Faltan las siguientes columnas en el archivo: {", ".join(missing_columns)}')
             return None
 
-        # Convertir las fechas a números ordinales
-        if 'fecha' in df.columns:
-            df['fecha'] = pd.to_datetime(df['fecha'], errors='coerce').map(pd.Timestamp.toordinal)
-
         # Eliminar la columna 'c/vm' si existe
         df.drop(columns=['c/vm'], inplace=True, errors='ignore')
 
@@ -59,25 +58,6 @@ def transform_dataframe(df):
 
         # Asegurarse de que las columnas numéricas tengan el tipo de dato correcto
         df[numeric_columns] = df[numeric_columns].astype(float)
-
-        # Definir los bins y las etiquetas para la clasificación
-        bins = [0, 5, 10, 15, 20, 25, 35, 50, 70, float('inf')]
-        labels = [9, 8, 7, 6, 5, 4, 3, 2, 1]
-
-        # Crear la columna 'clasificacion' usando pd.cut()
-        if 'coste' in df.columns:
-            df['clasificacion'] = pd.cut(df['coste'], bins=bins, labels=labels, right=False)
-
-        # Normalizar características numéricas
-        scaler = MinMaxScaler()
-        df[numeric_columns] = scaler.fit_transform(df[numeric_columns])
-
-        # Reordenar columnas para que coincidan con el formato requerido
-        required_columns_with_clasificacion = required_columns + ['clasificacion']
-        df = df[required_columns_with_clasificacion]
-
-        # Convertir la columna 'clasificacion' a tipo 'category'
-        df['clasificacion'] = df['clasificacion'].astype('category')
 
         return df
 

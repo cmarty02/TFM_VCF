@@ -52,7 +52,7 @@ with st.sidebar:
     st.header("VCF Forecasting Scouting Model")
     st.divider()
     st.subheader("Settings")
-    uploaded_file = st.file_uploader("Choose a xlsx file", type="xlsx")
+    uploaded_file = st.file_uploader("Choose a file", type="xlsx")
     run_button = st.button('Upload and Run')
 
     # Agregar barra de progreso en la barra lateral

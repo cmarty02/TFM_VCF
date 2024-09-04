@@ -5,7 +5,6 @@ from google.cloud import bigquery
 from google.oauth2 import service_account
 from funciones import upload_to_gcs, transform_dataframe, get_player_images
 import requests
-import time  # Importar time para simular el progreso
 
 # Configuración de la página
 st.set_page_config(
@@ -157,36 +156,35 @@ if run_button and show_content:
     try:
         # Llamar al servicio de Cloud Run
         progress_bar.progress(50)  # Actualizar la barra de progreso al 50%
-        url = 'https://cloud-run-juan-3-161031452234.europe-west1.run.app'
+        url = 'https://api-161031452234.us-central1.run.app/run'
         response = requests.get(url)
         
         if response.status_code == 200:
-            # Cloud Run ejecutado exitosamente, ahora consultar BigQuery
-            progress_bar.progress(75)  # Actualizar la barra de progreso al 75%
+            # Decodificar el JSON de la respuesta
+            data = response.json()
 
-            # Consultar BigQuery
-            query = f"""
-                SELECT img_player, jugador, prediccion
-                FROM `{PROJECT_ID}.{BQ_DATASET}.{BQ_TABLE}`
-                WHERE upload_id = (
-                    SELECT MAX(upload_id) FROM `{PROJECT_ID}.{BQ_DATASET}.{BQ_TABLE}`
+            # Verificar el contenido de `data` para asegurarse de que es una lista de diccionarios
+            if isinstance(data, list) and all(isinstance(item, dict) for item in data):
+                # Convertir el JSON a DataFrame
+                df_predictions = pd.DataFrame(data)
+                
+                # Mostrar el DataFrame de predicciones
+                st.subheader("Predictions")
+                st.data_editor(
+                    df_predictions,
+                    column_config={
+                        "img_player": st.column_config.ImageColumn(
+                            "Image_player", help="Streamlit app prediction images"
+                        )
+                    },
+                    hide_index=True,
                 )
-                    """
-            df_predictions = client.query(query).to_dataframe()
-
-            # Mostrar el DataFrame de predicciones
-            st.subheader("Predictions")
-            st.data_editor(
-                df_predictions,
-                column_config={
-                    "img_player": st.column_config.ImageColumn(
-                        "Image_player", help="Streamlit app prediction images"
-                    )
-                },
-                hide_index=True,
-            )
-            # Finalizar la barra de progreso
-            progress_bar.progress(100)
+                
+                # Finalizar la barra de progreso
+                progress_bar.progress(100)
+            else:
+                st.error("Formato de datos inesperado en la respuesta de la API.")
+                progress_bar.progress(0)
         else:
             st.error(f'Error {response.status_code}: {response.text}')
             progress_bar.progress(0)

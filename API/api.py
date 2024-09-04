@@ -19,11 +19,11 @@ PROJECT_ID = 'tfm-vcf'
 credentials, project = default()
 client = bigquery.Client(credentials=credentials, project=PROJECT_ID)
 
-@app.route('/run_predictions', methods=['GET', 'POST'])
+@app.route('/run', methods=['GET', 'POST'])
 def run_predictions():
     try:
         # Activar Cloud Run
-        url = 'https://cloud-run-juan-3-161031452234.europe-west1.run.app'
+        url = 'https://predict-161031452234.us-central1.run.app/predicciones'
         response = requests.get(url)
         
         if response.status_code != 200:

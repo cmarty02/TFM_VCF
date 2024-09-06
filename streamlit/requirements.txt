@@ -1,0 +1,15 @@
+streamlit
+unidecode
+scikit-learn
+Flask 
+pandas 
+google-cloud-bigquery 
+google-auth 
+scikit-learn 
+google-cloud-bigquery-storage 
+db-dtypes 
+google-cloud-storage 
+unidecode 
+bs4 
+google.cloud
+tqdm

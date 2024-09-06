@@ -1,18 +1,20 @@
 # Usa una imagen base de Python
-FROM python:3.8-slim
+FROM python:3.11-slim
 
 # Configura el directorio de trabajo
 WORKDIR /app
 
 # Copia los archivos necesarios
 COPY requirements.txt .
-COPY train.py .
 
 # Instala las dependencias
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expone el puerto en el que la app estará corriendo
+# Copia el código fuente de la API
+COPY api.py .
+
+# Exponer el puerto que usará la API
 EXPOSE 8080
 
-# Comando para ejecutar la aplicación
-CMD ["python", "train.py"]
+# Comando para ejecutar la API
+CMD ["python", "api.py"]

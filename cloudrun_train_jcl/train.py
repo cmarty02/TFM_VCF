@@ -15,6 +15,9 @@ def cargar_datos_bigquery():
     query = """
     SELECT *
     FROM `tfm-vcf.tfm_vcf_dataset.tfm_vcf_table`
+    WHERE upload_id = (
+                    SELECT MAX(upload_id) FROM `tfm-vcf.tfm_vcf_dataset.tfm_vcf_table`
+                )
     """
     df = pd.read_gbq(query, project_id=project_id, dialect='standard')
     return df
@@ -109,7 +112,7 @@ def actualizar_predicciones_bigquery(df, project_id, dataset_id, table_id):
         query_job = client.query(query, job_config=job_config)
         query_job.result()
 
-@app.route('/predicciones', methods=['POST'])
+@app.route('/predicciones', methods=['GET', 'POST'])
 def predicciones():
     try:
         df = cargar_datos_bigquery()

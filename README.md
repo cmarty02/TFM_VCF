@@ -70,6 +70,14 @@ El **VCF Forecasting Scouting Model** es una aplicación web interactiva desarro
 
 
 
+## Workflow
+
+
+![img_1](files/img_2.png)
+
+
+
+
 ## Team
 - Juan Cornejo
 - Jesus Orti

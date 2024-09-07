@@ -100,8 +100,9 @@ Updated subscription [projects/tfm-vcf/subscriptions/eventarc-us-central1-trigge
 
 - gcloud config set project tfm-vcf
 
-- gcloud builds submit --tag gcr.io/tfm-vcf/cloud-run-train
-
-- gcloud run deploy cloud-run-load --image gcr.io/tfm-vcf/cloud-run-train --platform managed --region us-central1 --allow-unauthenticated
+- gcloud builds submit --tag gcr.io/tfm-vcf/cloud-run-train&gcloud run deploy cloud-run-load --image gcr.io/tfm-vcf/cloud-run-train --platform managed --region us-central1 --allow-unauthenticated
 
 
+# Deploy APP
+
+gcloud builds submit --tag gcr.io/tfm-vcf/app-vcf&gcloud run deploy app-vcf --image gcr.io/tfm-vcf/app-vcf --platform managed --region us-central1 --allow-unauthenticated

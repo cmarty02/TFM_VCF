@@ -13,3 +13,5 @@ unidecode
 bs4 
 google.cloud
 tqdm
+plotly
+openpyxl

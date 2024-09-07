@@ -11,7 +11,14 @@ El **VCF Forecasting Scouting Model** es una aplicación web interactiva desarro
 - **Predicciones**: Realiza predicciones basadas en un modelo externo y muestra resultados en la interfaz.
 - **Visualizaciones**: Incluye gráficos interactivos para la distribución de nacionalidades, distribución de goles y asistencias, comparación de coste vs valor de mercado, y un diagrama de Sankey para flujos de transferencia.
 
-## Requisitos
+## Link Web
+https://app-vcf-161031452234.us-central1.run.app/
+
+
+## Link a Data Studio
+https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af
+
+## Librerias
 
 - **Python** 3.7 o superior
 - **Streamlit**: Para la interfaz web
@@ -21,7 +28,8 @@ El **VCF Forecasting Scouting Model** es una aplicación web interactiva desarro
 
 
 
-## Instalación
+
+## Instalación para ejecución en local
 
 1. Clona este repositorio:
     ```bash
@@ -85,24 +93,17 @@ El **VCF Forecasting Scouting Model** es una aplicación web interactiva desarro
 - Cristian Marty
   
 
-## Link a Data Studio
-https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af
-
 
 ## Setup subscripcion canal de pubsub y actuliazación de clud run y bucket
--cloudrun_load>gcloud pubsub subscriptions modify-push-config eventarc-us-central1-trigger-bsyn7wmz-sub-326 --push-endpoint=https://cloud-run-load-osmqjiapya-uc.a.run.app/ --push-auth-service-account=161031452234-compute@developer.gserviceaccount.com
+- cloudrun_load>gcloud pubsub subscriptions modify-push-config eventarc-us-central1-trigger-bsyn7wmz-sub-326 --push-endpoint=https://cloud-run-load-osmqjiapya-uc.a.run.app/ --push-auth-service-account=161031452234-compute@developer.gserviceaccount.com
 Updated subscription [projects/tfm-vcf/subscriptions/eventarc-us-central1-trigger-bsyn7wmz-sub-326].
 
 
-## Deploy_CloudRun - comandos sdk
+## Comandos sdk
 
 - gcloud auth login
 
 - gcloud config set project tfm-vcf
 
 - gcloud builds submit --tag gcr.io/tfm-vcf/cloud-run-train&gcloud run deploy cloud-run-load --image gcr.io/tfm-vcf/cloud-run-train --platform managed --region us-central1 --allow-unauthenticated
-
-
-# Deploy APP
-
-gcloud builds submit --tag gcr.io/tfm-vcf/app-vcf&gcloud run deploy app-vcf --image gcr.io/tfm-vcf/app-vcf --platform managed --region us-central1 --allow-unauthenticated
+- gcloud builds submit --tag gcr.io/tfm-vcf/app-vcf&gcloud run deploy app-vcf --image gcr.io/tfm-vcf/app-vcf --platform managed --region us-central1 --allow-unauthenticated

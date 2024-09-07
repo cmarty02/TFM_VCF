@@ -113,19 +113,49 @@ if run_button:
                         if isinstance(data, list) and all(isinstance(item, dict) for item in data):
                             # Convertir el JSON a DataFrame
                             df_predictions = pd.DataFrame(data)
+                            df_predictions['prediccion'] = df_predictions['prediccion'] * 100_000_000
+                            df_predictions['prediccion'] = df_predictions['prediccion'].apply(lambda x: f'€{x:,.2f}')
+                            
+                            # Merge de df_predictions con df_with_images
+                            df_merged = pd.merge(df_predictions, df_with_images, on='jugador', how='left')
+                            # Seleccionar columnas específicas
+                            columns_to_keep =  [
+                                                    'coste', 'vm_tm', 'elo_eo','elo_ed', 'elo_co',
+                                                    'elo_cd', 'partidos', 'goles', 'asistencias', 
+                                                    'goles_concedidos', 'rdt'
+                                                ]
+                            
+
+                            df_merged = df_merged[columns_to_keep]
+
                             
                             progress_bar.progress(80)  # 80% - Predicciones procesadas
-                            # Mostrar el DataFrame de predicciones
+                            
+                            # Mostrar los DataFrames de predicciones y el merge lado a lado
                             st.subheader("Predictions")
-                            st.data_editor(
-                                df_predictions,
-                                column_config={
-                                    "img_player": st.column_config.ImageColumn(
-                                        "Image_player", help="Streamlit app prediction images"
-                                    )
-                                },
-                                hide_index=True,
-                            )
+                            col1, col2 = st.columns([1, 4]) 
+                            
+                            with col1:
+                                st.data_editor(
+                                    df_predictions,
+                                    column_config={
+                                        "img_player": st.column_config.ImageColumn(
+                                            "Image_player", help="Streamlit app prediction images"
+                                        )
+                                    },
+                                    hide_index=True,
+                                )
+                            
+                            with col2:
+                                st.data_editor(
+                                    df_merged,
+                                    column_config={
+                                        "img_player": st.column_config.ImageColumn(
+                                            "Image_player", help="Streamlit app merged images"
+                                        )
+                                    },
+                                    hide_index=True,
+                                )
                             
                             # Finalizar la barra de progreso
                             progress_bar.progress(100)
@@ -195,57 +225,57 @@ if show_content:
             "Desviación Estándar": df_with_images[['coste', 'vm_tm', 'partidos', 'goles', 'asistencias']].std()
         }).reset_index().rename(columns={"index": "Métrica"})
         st.dataframe(summary)
-        st.divider()
-
-        # Distribución de Goles y Asistencias por Posición
-        st.subheader("Goals and Assists Distribution by Position")
-        position_stats = df_with_images.groupby('posicion')[['goles', 'asistencias']].agg(['sum', 'mean']).reset_index()
-        position_stats.columns = ['Posición', 'Goles Total', 'Asistencias Total', 'Promedio Goles', 'Promedio Asistencias']
-        st.dataframe(position_stats)
-        st.divider()
-
-    with col2:
-        # Visualización de Coste vs Valor de Mercado usando Plotly
-        st.subheader("Cost vs Market Value")
-        fig_cost_vs_value = px.scatter(df_with_images, x='coste', y='vm_tm', color='posicion', 
-                                       title='Cost vs Market Value',
-                                       labels={'coste': 'Coste', 'vm_tm': 'Valor de Mercado (VM)'},
-                                       height=400)  # Ajustar altura para hacerlo más pequeño
-        st.plotly_chart(fig_cost_vs_value, use_container_width=True)
-        st.divider()
+       
 
         # Distribución de Nacionalidades usando Plotly
         st.subheader("Nationality Distribution")
         nationality_counts = df_with_images['nacionalidad'].value_counts().reset_index()
         nationality_counts.columns = ['Nacionalidad', 'Número de Jugadores']
         fig_nationality_distribution = px.pie(nationality_counts, names='Nacionalidad', values='Número de Jugadores',
-                                              title='Distribución de Nacionalidades',
-                                              hole=0.4)  # Gráfico de anillos
+                                            title='Distribución de Nacionalidades',
+                                            hole=0.4)  # Gráfico de anillos
         st.plotly_chart(fig_nationality_distribution, use_container_width=True)
-        st.divider()
+        
 
-        # Gráfico de Sankey para equipo de origen y destino
-        st.subheader("Sankey Diagram of Transfer Flows")
-        sankey_data = df_with_images.groupby(['equipo_origen', 'equipo_destino'])['coste'].sum().reset_index()
+    with col2:
+        # Distribución de Goles y Asistencias por Posición
+        st.subheader("Goals and Assists Distribution by Position")
+        position_stats = df_with_images.groupby('posicion')[['goles', 'asistencias']].agg(['sum', 'mean']).reset_index()
+        position_stats.columns = ['Posición', 'Goles Total', 'Asistencias Total', 'Promedio Goles', 'Promedio Asistencias']
+        st.dataframe(position_stats)
         
-        # Crear un DataFrame para el gráfico Sankey
-        labels = list(pd.concat([sankey_data['equipo_origen'], sankey_data['equipo_destino']]).unique())
-        source_indices = [labels.index(e) for e in sankey_data['equipo_origen']]
-        target_indices = [labels.index(e) for e in sankey_data['equipo_destino']]
         
-        fig_sankey = go.Figure(go.Sankey(
-            node=dict(
-                pad=15,
-                thickness=20,
-                line=dict(color="black", width=0.5),
-                label=labels
-            ),
-            link=dict(
-                source=source_indices,
-                target=target_indices,
-                value=sankey_data['coste']
-            )
-        ))
-        fig_sankey.update_layout(title_text="Sankey Diagram of Transfer Flows", height=500)
-        st.plotly_chart(fig_sankey, use_container_width=True)
-        st.divider()
+        # Visualización de Coste vs Valor de Mercado usando Plotly
+        st.subheader("Cost vs Market Value")
+        fig_cost_vs_value = px.scatter(df_with_images, x='coste', y='vm_tm', color='posicion', 
+                                    title='Cost vs Market Value',
+                                    labels={'coste': 'Coste', 'vm_tm': 'Valor de Mercado (VM)'},
+                                    height=400)  # Ajustar altura para hacerlo más pequeño
+        st.plotly_chart(fig_cost_vs_value, use_container_width=True)
+        
+
+    # Gráfico de Sankey para equipo de origen y destino (ocupa el ancho completo y está al final)
+    st.subheader("Sankey Diagram of Transfer Flows")
+    sankey_data = df_with_images.groupby(['equipo_origen', 'equipo_destino'])['coste'].sum().reset_index()
+
+    # Crear un DataFrame para el gráfico Sankey
+    labels = list(pd.concat([sankey_data['equipo_origen'], sankey_data['equipo_destino']]).unique())
+    source_indices = [labels.index(e) for e in sankey_data['equipo_origen']]
+    target_indices = [labels.index(e) for e in sankey_data['equipo_destino']]
+
+    fig_sankey = go.Figure(go.Sankey(
+        node=dict(
+            pad=15,
+            thickness=20,
+            line=dict(color="black", width=0.5),
+            label=labels
+        ),
+        link=dict(
+            source=source_indices,
+            target=target_indices,
+            value=sankey_data['coste']
+        )
+    ))
+    fig_sankey.update_layout(title_text="Sankey Diagram of Transfer Flows", height=500)
+    st.plotly_chart(fig_sankey, use_container_width=True)
+    st.divider()

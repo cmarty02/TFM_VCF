@@ -7,6 +7,7 @@ from funciones import upload_to_gcs, transform_dataframe, get_player_images
 import requests
 import plotly.express as px
 import plotly.graph_objects as go
+import matplotlib.colors as mcolors
 
 # Configuración de la página
 st.set_page_config(
@@ -64,6 +65,9 @@ status_placeholder = st.sidebar.empty()
 # Variable de estado para mostrar el contenido
 show_content = st.session_state.get('show_content', False)
 show_predictions = st.session_state.get('show_predictions', False)
+
+tab1,tab2 = st.tabs (["Predictions","Data overview"])
+
 
 if run_button:
     if uploaded_file is not None:
@@ -127,40 +131,47 @@ if run_button:
                             
 
                             df_merged = df_merged[columns_to_keep]
+                            df_predictions['prediccion'] = df_predictions['prediccion'].replace({'€': '', ',': ''}, regex=True).astype(float).round(2)
+                            
+                            cmap = mcolors.LinearSegmentedColormap.from_list('custom_cmap', ['#ffffff', '#FF5900'], N=256)
+
+                            df_styled = df_predictions.style.background_gradient(subset=['prediccion'], cmap=cmap).format({'prediccion': '€{:,.2f}'})
 
                             
                             progress_bar.progress(80)  # 80% - Predicciones procesadas
                             
-                            # Mostrar los DataFrames de predicciones y el merge lado a lado
-                            st.subheader("Predictions")
-                            col1, col2 = st.columns([1, 4]) 
-                            
-                            with col1:
-                                st.data_editor(
-                                    df_predictions,
-                                    column_config={
-                                        "img_player": st.column_config.ImageColumn(
-                                            "Image_player", help="Streamlit app prediction images"
-                                        )
-                                    },
-                                    hide_index=True,
-                                )
-                            
-                            with col2:
-                                st.data_editor(
-                                    df_merged,
-                                    column_config={
-                                        "img_player": st.column_config.ImageColumn(
-                                            "Image_player", help="Streamlit app merged images"
-                                        )
-                                    },
-                                    hide_index=True,
-                                )
-                            
-                            # Finalizar la barra de progreso
-                            progress_bar.progress(100)
-                            show_predictions = True
-                            st.session_state.show_predictions = True
+                            with tab1:
+
+                                # Mostrar los DataFrames de predicciones y el merge lado a lado
+                                st.header("Predictions")
+                                col1, col2 = st.columns([2, 4]) 
+                                
+                                with col1:
+                                    st.dataframe(
+                                        df_styled,
+                                        column_config={
+                                            "img_player": st.column_config.ImageColumn(
+                                                "Image_player", help="Streamlit app prediction images"
+                                            )
+                                        },
+                                        hide_index=True
+                                    )
+                                
+                                with col2:
+                                    st.dataframe(
+                                        df_merged,
+                                        column_config={
+                                            "img_player": st.column_config.ImageColumn(
+                                                "Image_player", help="Streamlit app merged images"
+                                            )
+                                        },
+                                        hide_index=True,
+                                    )
+                                
+                                # Finalizar la barra de progreso
+                                progress_bar.progress(100)
+                                show_predictions = True
+                                st.session_state.show_predictions = True
                         else:
                             st.error("Formato de datos inesperado en la respuesta de la API.")
                             progress_bar.progress(0)
@@ -180,8 +191,8 @@ if run_button:
 
 if show_content:
     # Mostrar la tabla de vista previa en la parte superior, ocupando todo el ancho
-    st.subheader("Preview")
-    st.data_editor(
+    st.subheader("Players overview")
+    st.dataframe(
         df_with_images,
         column_config={
             "img_player": st.column_config.ImageColumn(
@@ -192,90 +203,103 @@ if show_content:
     )
     st.divider()  # Divisor debajo de la tabla de vista previa
 
-    # Mostrar las métricas en una sola fila
-    st.subheader("Metrics")
-    col1, col2, col3, col4 = st.columns(4)
-    
-    with col1:
-        avg_assists = df_with_images['asistencias'].mean()
-        st.metric(label="Promedio Asistencias", value=f"{avg_assists:.2f}")
+    with tab2:
 
-    with col2:
-        avg_goals = df_with_images['goles'].mean()
-        st.metric(label="Promedio Goles", value=f"{avg_goals:.2f}")
+        # Mostrar las métricas en una sola fila
+        st.subheader("Metrics")
+        col1, col2, col3, col4 = st.columns(4)
+        
+        with col1:
+            avg_assists = df_with_images['asistencias'].mean()
+            st.metric(label="Mean goal assists", value=f"{avg_assists:.2f}")
 
-    with col3:
-        avg_matches = df_with_images['partidos'].mean()
-        st.metric(label="Promedio Partidos", value=f"{avg_matches:.2f}")
+        with col2:
+            avg_goals = df_with_images['goles'].mean()
+            st.metric(label="Mean goals", value=f"{avg_goals:.2f}")
 
-    with col4:
-        avg_age = df_with_images['edad'].mean()
-        st.metric(label="Promedio Edad", value=f"{avg_age:.2f}")
+        with col3:
+            avg_matches = df_with_images['partidos'].mean()
+            st.metric(label="Mean matches", value=f"{avg_matches:.2f}")
 
-    st.divider()  # Divisor debajo de las métricas
+        with col4:
+            avg_age = df_with_images['edad'].mean()
+            st.metric(label="Mean age", value=f"{avg_age:.2f}")
 
-    # Crear dos columnas para organizar el contenido horizontalmente
-    col1, col2 = st.columns([1, 1])  # La segunda columna será más ancha
+        st.divider()  # Divisor debajo de las métricas
 
-    with col1:
-        # Resumen Estadístico General
-        st.subheader("General Statistical Summary")
-        summary = pd.DataFrame({
-            "Promedio": df_with_images[['coste', 'vm_tm', 'partidos', 'goles', 'asistencias']].mean(),
-            "Desviación Estándar": df_with_images[['coste', 'vm_tm', 'partidos', 'goles', 'asistencias']].std()
-        }).reset_index().rename(columns={"index": "Métrica"})
-        st.dataframe(summary)
-       
+        # Crear dos columnas para organizar el contenido horizontalmente
+        col1, col2 = st.columns([1, 1])  # La segunda columna será más ancha
 
-        # Distribución de Nacionalidades usando Plotly
-        st.subheader("Nationality Distribution")
-        nationality_counts = df_with_images['nacionalidad'].value_counts().reset_index()
-        nationality_counts.columns = ['Nacionalidad', 'Número de Jugadores']
-        fig_nationality_distribution = px.pie(nationality_counts, names='Nacionalidad', values='Número de Jugadores',
-                                            title='Distribución de Nacionalidades',
-                                            hole=0.4)  # Gráfico de anillos
-        st.plotly_chart(fig_nationality_distribution, use_container_width=True)
+        with col1:
+            # Resumen Estadístico General
+            st.subheader("General Statistical Summary")
+            summary = pd.DataFrame({
+                "Promedio": df_with_images[['coste', 'vm_tm', 'partidos', 'goles', 'asistencias']].mean(),
+                "Desviación Estándar": df_with_images[['coste', 'vm_tm', 'partidos', 'goles', 'asistencias']].std()
+            }).reset_index().rename(columns={"index": "Métrica"})
+            st.dataframe(summary)
         
 
-    with col2:
-        # Distribución de Goles y Asistencias por Posición
-        st.subheader("Goals and Assists Distribution by Position")
-        position_stats = df_with_images.groupby('posicion')[['goles', 'asistencias']].agg(['sum', 'mean']).reset_index()
-        position_stats.columns = ['Posición', 'Goles Total', 'Asistencias Total', 'Promedio Goles', 'Promedio Asistencias']
-        st.dataframe(position_stats)
-        
-        
-        # Visualización de Coste vs Valor de Mercado usando Plotly
-        st.subheader("Cost vs Market Value")
-        fig_cost_vs_value = px.scatter(df_with_images, x='coste', y='vm_tm', color='posicion', 
-                                    title='Cost vs Market Value',
-                                    labels={'coste': 'Coste', 'vm_tm': 'Valor de Mercado (VM)'},
-                                    height=400)  # Ajustar altura para hacerlo más pequeño
-        st.plotly_chart(fig_cost_vs_value, use_container_width=True)
-        
+            # Distribución de Nacionalidades usando Plotly (Gráfico de Barras)
+            st.subheader("Nationality Distribution")
+            nationality_counts = df_with_images['nacionalidad'].value_counts().reset_index()
+            nationality_counts.columns = ['Nacionalidad', 'Número de Jugadores']
 
-    # Gráfico de Sankey para equipo de origen y destino (ocupa el ancho completo y está al final)
-    st.subheader("Sankey Diagram of Transfer Flows")
-    sankey_data = df_with_images.groupby(['equipo_origen', 'equipo_destino'])['coste'].sum().reset_index()
+            # Crear el gráfico de barras
+            fig_nationality_distribution = px.bar(
+                nationality_counts,
+                x='Nacionalidad',  # Eje X: Nacionalidades
+                y='Número de Jugadores',  # Eje Y: Número de jugadores
+                title='Distribución de Nacionalidades',
+                labels={'Nacionalidad': 'Nacionalidad', 'Número de Jugadores': 'Número de Jugadores'},
+                height=400,  # Ajusta la altura del gráfico
+                color_discrete_sequence=['#FF5900']  # Color personalizado para las barras (naranja)
+            )
 
-    # Crear un DataFrame para el gráfico Sankey
-    labels = list(pd.concat([sankey_data['equipo_origen'], sankey_data['equipo_destino']]).unique())
-    source_indices = [labels.index(e) for e in sankey_data['equipo_origen']]
-    target_indices = [labels.index(e) for e in sankey_data['equipo_destino']]
+            # Mostrar el gráfico en Streamlit
+            st.plotly_chart(fig_nationality_distribution, use_container_width=True)
 
-    fig_sankey = go.Figure(go.Sankey(
-        node=dict(
-            pad=15,
-            thickness=20,
-            line=dict(color="black", width=0.5),
-            label=labels
-        ),
-        link=dict(
-            source=source_indices,
-            target=target_indices,
-            value=sankey_data['coste']
-        )
-    ))
-    fig_sankey.update_layout(title_text="Sankey Diagram of Transfer Flows", height=500)
-    st.plotly_chart(fig_sankey, use_container_width=True)
-    st.divider()
+            
+
+        with col2:
+            # Distribución de Goles y Asistencias por Posición
+            st.subheader("Goals and Assists Distribution by Position")
+            position_stats = df_with_images.groupby('posicion')[['goles', 'asistencias']].agg(['sum', 'mean']).reset_index()
+            position_stats.columns = ['Posición', 'Goles Total', 'Asistencias Total', 'Promedio Goles', 'Promedio Asistencias']
+            st.dataframe(position_stats)
+            
+            
+            # Visualización de Coste vs Valor de Mercado usando Plotly
+            st.subheader("Cost vs Market Value")
+            fig_cost_vs_value = px.scatter(df_with_images, x='coste', y='vm_tm', color='posicion', 
+                                        title='Cost vs Market Value',
+                                        labels={'coste': 'Coste', 'vm_tm': 'Valor de Mercado (VM)'},
+                                        height=400)  # Ajustar altura para hacerlo más pequeño
+            st.plotly_chart(fig_cost_vs_value, use_container_width=True)
+            
+
+        # Gráfico de Sankey para equipo de origen y destino (ocupa el ancho completo y está al final)
+        st.subheader("Sankey Diagram of Transfer Flows")
+        sankey_data = df_with_images.groupby(['equipo_origen', 'equipo_destino'])['coste'].sum().reset_index()
+
+        # Crear un DataFrame para el gráfico Sankey
+        labels = list(pd.concat([sankey_data['equipo_origen'], sankey_data['equipo_destino']]).unique())
+        source_indices = [labels.index(e) for e in sankey_data['equipo_origen']]
+        target_indices = [labels.index(e) for e in sankey_data['equipo_destino']]
+
+        fig_sankey = go.Figure(go.Sankey(
+            node=dict(
+                pad=15,
+                thickness=20,
+                line=dict(color="black", width=0.5),
+                label=labels
+            ),
+            link=dict(
+                source=source_indices,
+                target=target_indices,
+                value=sankey_data['coste']
+            )
+        ))
+        fig_sankey.update_layout(title_text="Sankey Diagram of Transfer Flows", height=500)
+        st.plotly_chart(fig_sankey, use_container_width=True)
+        st.divider()

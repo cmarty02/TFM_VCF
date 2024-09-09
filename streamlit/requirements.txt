@@ -15,4 +15,4 @@ google.cloud
 tqdm
 plotly
 openpyxl
-matplotlib.colors
+matplotlib

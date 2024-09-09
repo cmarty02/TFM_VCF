@@ -24,6 +24,7 @@ def upload_to_gcs(bucket_name, destination_blob_name, file):
     blob.upload_from_file(file)
     st.success(f'File uploaded to {bucket_name}/{destination_blob_name}')
 
+
 # Función para transformar el DataFrame
 def transform_dataframe(df):
     try:
@@ -142,3 +143,4 @@ def get_player_images(input_df, players_csv):
     df_processed = process_players(input_df, players_csv)
     # Retornar el DataFrame con todos los datos y la nueva columna 'img_player'
     return df_processed
+

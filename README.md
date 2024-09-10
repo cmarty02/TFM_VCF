@@ -30,7 +30,7 @@ https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af
 - **Pandas**: Librería para la manipulación y análisis de datos.
 - **Plotly**: Para la generación de gráficos y visualizaciones interactivas.
 - **BeautifulSoup**: Utilizado para el web scraping automatizado de las imagenes de los jugadores.
-- **Scikit-Learn**: Biblioteca para modelado de datos y creación de Scalers y modelos *.pkl.
+- **Scikit-Learn**: Biblioteca para modelado de datos y creación de scalers y modelos *.pkl.
 
 
 

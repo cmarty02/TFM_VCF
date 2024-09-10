@@ -18,7 +18,7 @@ https://app-vcf-161031452234.us-central1.run.app/
 ## Link a Data Studio
 https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af
 
-## Librerias Principales
+## Stack Tecnológico
 
 - **Python** 3.7 o superior
 - **Streamlit**: Para la interfaz web

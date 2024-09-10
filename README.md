@@ -18,15 +18,15 @@ https://app-vcf-161031452234.us-central1.run.app/
 ## Link a Data Studio
 https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af
 
-## Librerias
+## Librerias Principales
 
 - **Python** 3.7 o superior
 - **Streamlit**: Para la interfaz web
 - **Pandas**: Para la manipulación de datos
 - **Plotly**: Para las visualizaciones
 - **Google Cloud**: Para interactuar con BigQuery y Google Cloud Storage
-
-
+- **Scikit-Learn**: Para modelado y construccion de Scalers y *.pkl
+- **Flask**: Framework para el desarrollo de la API y los Cloud Run. 
 
 
 ## Instalación para ejecución en local

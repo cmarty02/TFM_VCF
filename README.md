@@ -22,14 +22,15 @@ https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af
 
 - **Python** 3.7 o superior.
 - **Streamlit**: Framework para la creación de la interfaz web.
-- **Pandas**: Librería para la manipulación y análisis de datos.
-- **Plotly**: Para la generación de gráficos y visualizaciones interactivas.
 - **BigQuery**: Servicio de Google Cloud para el almacenado de datos y ejecución de consultas.
 - **Google Cloud Storage (Buckets)**: Para el almacenamiento y gestión de archivos.
 - **Cloud Run**: Utilizado para el depliegue y ejecución de aplicaciones basadas en contenedores de forma escalable.
 - **Pub/Sub**: Sistema de mensajería de Google Cloud utilizado para comunicación asíncrona entre servicios y activacion de los Clud Run.
 - **Scikit-Learn**: Biblioteca para modelado de datos y creación de Scalers y archivos *.pkl.
 - **Flask**: Framework utilizado para el desarrollo de la API y los Cloud Run.
+- **Pandas**: Librería para la manipulación y análisis de datos.
+- **Plotly**: Para la generación de gráficos y visualizaciones interactivas.
+- **BeautifulSoup**: Utilizado para el web scraping automatizado de las imagenes de los jugadores.
 
 
 

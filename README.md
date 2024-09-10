@@ -14,6 +14,9 @@ El **VCF Forecasting Scouting Model** es una aplicación web interactiva desarro
 ## Link Web
 https://app-vcf-161031452234.us-central1.run.app/
 
+## Memoria PDF
+file:///C:/Users/Andr%C3%A9s/Desktop/Dep%C3%B3sito%20TFM%20-%20Memoria%20y%20Anexos%20-%20Grupo%20VALENCIA%20CF.pdf
+
 
 ## Link a Data Studio
 https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af

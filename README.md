@@ -20,13 +20,17 @@ https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af
 
 ## Stack Tecnológico
 
-- **Python** 3.7 o superior
-- **Streamlit**: Para la interfaz web
-- **Pandas**: Para la manipulación de datos
-- **Plotly**: Para las visualizaciones
-- **Google Cloud**: Para interactuar con BigQuery, Cloud Storage (bucket´s) y Cloud Run
-- **Scikit-Learn**: Para modelado y construccion de Scalers y *.pkl
-- **Flask**: Framework para el desarrollo de la API y los Cloud Run. 
+- **Python** 3.7 o superior**: Lenguaje de programación principal.
+- **Streamlit**: Framework para la creación de la interfaz web.
+- **Pandas**: Librería para la manipulación y análisis de datos.
+- **Plotly**: Para la generación de gráficos y visualizaciones interactivas.
+- **BigQuery**: Servicio de Google Cloud para el almacenado de datos y ejecución de consultas.
+- **Google Cloud Storage (Buckets)**: Para el almacenamiento y gestión de archivos.
+- **Cloud Run**: Utilizado para el depliegue y ejecución de aplicaciones basadas en contenedores de forma escalable.
+- **Pub/Sub**: Sistema de mensajería de Google Cloud utilizado para comunicación asíncrona entre servicios y activacion de los Clud Run.
+- **Scikit-Learn**: Biblioteca para modelado de datos y creación de Scalers y archivos *.pkl.
+- **Flask**: Framework ligero para desarrollar APIs y aplicaciones web, utilizado para la integración con Cloud Run.
+
 
 
 ## Instalación para ejecución en local

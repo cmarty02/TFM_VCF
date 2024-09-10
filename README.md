@@ -26,11 +26,11 @@ https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af
 - **Google Cloud Storage (Buckets)**: Para el almacenamiento y gestión de archivos.
 - **Cloud Run**: Utilizado para el depliegue y ejecución de aplicaciones basadas en contenedores de forma escalable.
 - **Pub/Sub**: Sistema de mensajería de Google Cloud utilizado para comunicación asíncrona entre servicios y activacion de los Clud Run.
-- **Scikit-Learn**: Biblioteca para modelado de datos y creación de Scalers y archivos *.pkl.
 - **Flask**: Framework utilizado para el desarrollo de la API y los Cloud Run.
 - **Pandas**: Librería para la manipulación y análisis de datos.
 - **Plotly**: Para la generación de gráficos y visualizaciones interactivas.
 - **BeautifulSoup**: Utilizado para el web scraping automatizado de las imagenes de los jugadores.
+- **Scikit-Learn**: Biblioteca para modelado de datos y creación de Scalers y modelos *.pkl.
 
 
 

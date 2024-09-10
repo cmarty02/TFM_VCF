@@ -100,7 +100,6 @@ Updated subscription [projects/tfm-vcf/subscriptions/eventarc-us-central1-trigge
 
 
 ## Comandos sdk
-
 - gcloud auth login
 
 - gcloud config set project tfm-vcf

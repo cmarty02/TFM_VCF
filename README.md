@@ -20,7 +20,7 @@ https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af
 
 ## Stack Tecnológico
 
-- **Python** 3.7 o superior**: Lenguaje de programación principal.
+- **Python** 3.7 o superior.
 - **Streamlit**: Framework para la creación de la interfaz web.
 - **Pandas**: Librería para la manipulación y análisis de datos.
 - **Plotly**: Para la generación de gráficos y visualizaciones interactivas.

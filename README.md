@@ -24,7 +24,7 @@ https://lookerstudio.google.com/reporting/4839a9a6-6bda-4eae-9df6-7027d580f0af
 - **Streamlit**: Para la interfaz web
 - **Pandas**: Para la manipulación de datos
 - **Plotly**: Para las visualizaciones
-- **Google Cloud**: Para interactuar con BigQuery y Google Cloud Storage
+- **Google Cloud**: Para interactuar con BigQuery, Cloud Storage (bucket´s) y Cloud Run
 - **Scikit-Learn**: Para modelado y construccion de Scalers y *.pkl
 - **Flask**: Framework para el desarrollo de la API y los Cloud Run. 
 

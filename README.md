@@ -11,7 +11,7 @@ El **VCF Forecasting Scouting Model** es una aplicación web interactiva desarro
 - **Predicciones**: Realiza predicciones basadas en un modelo externo y muestra resultados en la interfaz.
 - **Visualizaciones**: Incluye gráficos interactivos para la distribución de nacionalidades, distribución de goles y asistencias, comparación de coste vs valor de mercado, y un diagrama de Sankey para flujos de transferencia.
 
-## Link Web
+## Link Webapp
 https://app-vcf-161031452234.us-central1.run.app/
 
 ## Link a Data Studio
